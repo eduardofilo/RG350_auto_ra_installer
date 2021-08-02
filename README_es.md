@@ -122,7 +122,7 @@ Como resultado de la ejecución (y si no se producen errores durante la misma), 
 
 Cuando se lanza, pregunta por dos opciones que están desactivadas por defecto:
 
-![Installing options](/images/posts/rg350_ra_installer/installing_options.png)
+![Installing options](/images/installing_options.png)
 
 * Uninstall previous wrappers: Borra los lanzadores OPK de los cores (wrappers) instalados con otro paquete de instalación de RetroArch.
 * Install config: Para instalar las configuraciones comentadas en el tercer punto de la lista anterior. Se recomienda instalar las configuraciones la primera vez y no instalarlas en reinstalaciones posteriores para evitar la pérdida de los ajustes personales hechos sobre la configuración básica.
