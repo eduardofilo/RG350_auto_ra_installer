@@ -1,6 +1,6 @@
 ![Icono](images/icon_big.png)
 
-Este repositorio ofrece un script bash para construir un instalador a partir de los ficheros de la distribución oficial de [RetroArch](https://www.retroarch.com/) para las distintas variantes de las consolas Anbernic RG350 y RG280. El OPK generado instalará los ficheros del framework RetroArch en sus ubicaciones precisas, a los que añadirá una serie de lanzadores OPK independientes para los distintos cores, de manera que se facilite la integración en distintos frontends como GMenu2X o [SimpleMenu](https://github.com/fgl82/simplemenu).
+Este repositorio ofrece un script bash para construir un instalador a partir de los ficheros de la distribución oficial de [RetroArch](https://www.retroarch.com/) para las distintas variantes de las consolas Anbernic RG350 y RG280. El OPK generado instalará los ficheros del framework RetroArch en sus ubicaciones precisas, a los que añadirá una serie de lanzadores o wrappers OPK independientes para los distintos cores, de manera que se facilite la integración en distintos frontends como GMenu2X o [SimpleMenu](https://github.com/fgl82/simplemenu).
 
 ## Cores RetroArch instalados
 
