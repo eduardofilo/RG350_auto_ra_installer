@@ -149,6 +149,6 @@ Si se utiliza la opción `Install config` definida anteriormente, entre otras co
 |Cambiar slot savestate|`Select + ←→`|
 |Cambiar volumen|`Select + ↑↓`|
 
-## Canal Telegram
+## Canal Telegram para comunicar actualizaciones
 
 Se ha creado este canal de Telegram para comunicar más fácilmente las actualizaciones de este instalador: [https://t.me/RG350_ra_installer](https://t.me/RG350_ra_installer)
