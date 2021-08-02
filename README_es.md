@@ -46,7 +46,7 @@ A continuación se muestra la lista completa de cores que se incluyen en el inst
 |Poligraf|2048_libretro.so|[2048](https://en.wikipedia.org/wiki/2048_(video_game))|false| | |
 |Poligraf|81_libretro.so|Sinclair ZX81|true|p, tzx, t81| |
 |Poligraf|atari800_libretro.so|Atari 5200|true|xfd,atr,cdm,cas,bin,a52,zip,atx,car,com,xex|Necesita BIOS para emular Atari5200: `5200.rom` (md5: `281f20ea4320404ec820fb7ec0693b38`)|
-|Poligraf|bk_libretro.so|Elektronika - BK-0010/BK-0011|true|bin|Needs BIOS (model `BK-0010`): `bk/BASIC10.ROM` (md5: `3fa774326d75410a065659aea80252f0`), `bk/FOCAL10.ROM` (md5: `5737f972e8638831ab71e9139abae052`), `bk/MONIT10.ROM` (md5: `95f8c41c6abf7640e35a6a03cecebd01`). Unsupported video mode en stock/ROGUE.|
+|Poligraf|bk_libretro.so|Elektronika - BK-0010/BK-0011|true|bin|Necesita BIOS (model `BK-0010`): `bk/BASIC10.ROM` (md5: `3fa774326d75410a065659aea80252f0`), `bk/FOCAL10.ROM` (md5: `5737f972e8638831ab71e9139abae052`), `bk/MONIT10.ROM` (md5: `95f8c41c6abf7640e35a6a03cecebd01`). Unsupported video mode en stock/ROGUE.|
 |Poligraf|bluemsx_libretro.so|MSX, MSX2|true|rom,ri,mx1,mx2,col,dsk,cas,sg,sc,m3u|Necesita BIOS en directorio `.retroarch/system/Machines`|
 |Poligraf|cannonball_libretro.so|SEGA Outrun|true|game, 88|Necesita ficheros de juego y un fichero dummy con la extensión `.game`|
 |Poligraf|cap32_libretro.so|Amstrad CPC|true|dsk, sna, zip, tap, cdt, voc, cpr, m3u| |
@@ -69,7 +69,7 @@ A continuación se muestra la lista completa de cores que se incluyen en el inst
 |Poligraf|puae_libretro.so|Commodore Amiga|true|adf, adz, dms, fdi, ipf, hdf, hdz, lha, slave, info, cue, ccd, nrg, mds, iso, chd, uae, m3u, zip, 7z|Necesita BIOS: `kick34005.A500` (md5: `82a21c1890cae844b3df741f2762d48d`)|
 |Poligraf|quasi88_libretro.so|NEC PC-88|true|d88,u88,m3u|Necesita BIOS: `quasi88/n88.rom`, `quasi88/n88_0.rom`|
 |Poligraf|reminiscence_libretro.so|Flashback|true|map, aba, seq, lev|Necesita ficheros de juego. No he conseguido hacerlo funcionar.|
-|Poligraf|stonesoup_libretro.so|Dungeon Crawl Stone Soup|true|crawlrc|Necesita [ficheros de juego](https://github.com/libretro/crawl-ref/tree/master/crawl-ref/source/dat) and an empty file `game.crawlrc` (instructions [here](https://docs.libretro.com/library/stone_soup/#how-to-start-the-dungeon-crawl-stone-soup-core)). Unsupported video mode sobre RG280/stock/ROGUE, reinicios sobre ODBeta.|
+|Poligraf|stonesoup_libretro.so|Dungeon Crawl Stone Soup|true|crawlrc|Necesita [ficheros de juego](https://github.com/libretro/crawl-ref/tree/master/crawl-ref/source/dat) y un fichero vacío `game.crawlrc` (instrucciones [aquí](https://docs.libretro.com/library/stone_soup/#how-to-start-the-dungeon-crawl-stone-soup-core)). `Unsupported video mode` sobre RG280/stock/ROGUE, reinicios sobre ODBeta.|
 |Poligraf|theodore_libretro.so|Thomson - MO/TO|true|fd, sap, k7, m7, m5, rom|Configuración complicada debido a unsupported video mode. Conseguido cierto éxito con el modelo MO5 sobre ODBeta, pero no sobre stock/ROGUE.|
 |Poligraf|uzem_libretro.so|Uzebox|true|uze|Rendimiento pobre|
 |Poligraf|vecx_libretro.so|Vectrex|true|bin,vec| |
@@ -84,11 +84,11 @@ Los OPKs para lanzar los distintos cores se generan automáticamente a partir de
 1. Rótulo que mostrará GMenu2X del OPK. Por ejemplo `Nintendo GB`.
 2. Nombre del fichero OPK sin la extensión OPK. Al nombre se le añadirá al principio la partícula `retroarch_rg350_`. Por ejemplo si en esta columna ponemos `GB`, el nombre del fichero OPK resultante será `retroarch_rg350_GB.opk`.
 3. Nombre del fichero PNG (sin extensión) que se usará como icono en el OPK. El icono correspondiente deberá existir en el subdirectorio `icons` del repositorio. Por ejemplo si en esta columna ponemos `gb`, debemos asegurarnos de que existe el fichero `icons/gb.png`, que será copiado al interior del OPK durante el proceso de construcción del instalador.
-4. En esta columna indicamos con `true` o `false` si el OPK generado mostrará el explorador de ficheros para seleccionar la ROM o fichero de juego al ser lanzado desde GMenu2X. Corresponderá con la columna `Necesita ficheros` de la tabla del apartado anterior. Normalmente esta columna vale `true` excepto en cores que corresponden a ports de juegos como Mr.Boom.
-5. Nombre del fichero correspondiente al core a utilizar con la extensión `.so` incluida. Por ejemplo `gambatte_libretro.so`. Lo tomaremos de la columna `Core` de la tabla del apartado anterior.
+4. En esta columna indicamos con `true` o `false` si el OPK generado mostrará el explorador de ficheros para seleccionar la ROM o fichero de juego al ser lanzado desde GMenu2X. Corresponderá con la columna `Necesita ficheros` de la tabla del apartado anterior. Normalmente esta columna vale `true` excepto en cores que corresponden a ports de juegos como `Mr.Boom`.
+5. Nombre del fichero correspondiente al core a utilizar (con la extensión `.so` incluida en este caso). Por ejemplo `gambatte_libretro.so`. Lo tomaremos de la columna `Core` de la tabla del apartado anterior.
 6. Descriptor del core. Se utiliza para diferenciar distintos lanzadores basados en el mismo sistema. Por ejemplo para distinguir los cores `GenesisPlus` y `Picodrive` del sistema `SEGA MD`.
 7. Extensiones soportadas por el core separadas por comas (,). Estas extensiones son las que serán filtradas por GMenu2X al mostrar el explorador de archivos (sólo funciona en ROGUE). Deberían coincidir o ser un subconjunto de las indicadas en la columna `Extensiones soportadas` de la tabla del apartado anterior. Por ejemplo para Game Boy normal (no color) pondremos `gb,gz,zip,7z`.
-8. Directorio donde se encuentran las ROMs del sistema. Será el que muestre por defecto GMenu2X al abrir el OPK, aunque lo podremos cambiar en cualquier momento. Por ejemplo `/media/sdcard/roms/GB/`.
+8. Directorio donde se encuentran las ROMs del sistema. Será el que muestre por defecto GMenu2X al abrir el OPK. Por ejemplo `/media/sdcard/roms/GB/`.
 
 ## Utilización del script
 
@@ -100,7 +100,7 @@ El script se ha diseñado para ser utilizado en Linux sobre bash. El procedimien
     $ sudo apt install git wget p7zip-full tar sed squashfs-tools
     ```
 
-2. Descargar el repositorio y los submódulos:
+2. Descargar el repositorio y los submódulos  (**IMPORTANTE**):
 
     ```bash
     $ git clone --recurse-submodules https://github.com/eduardofilo/RG350_ra_installer.git
@@ -108,7 +108,7 @@ El script se ha diseñado para ser utilizado en Linux sobre bash. El procedimien
 
 3. Crear el fichero CSV con la parametrización que nos interese. Nos podemos basar en los dos ficheros incluidos como ejemplo en el repositorio (`official.csv` y `poligraf.csv`). Es importante tener en cuenta que el separador de columnas es una pila (|) y no una coma (,) como habitualmente en este tipo de ficheros.
 
-4. Ajustar el parámetro `CONF_CSV` al principio del script con el nombre del fichero CSV sin extensión con la parametrización que vamos a utilizar.
+4. Ajustar el parámetro `CONF_CSV` al principio del script con el nombre del fichero CSV anterior (sin extensión).
 
 5. Ejecutar el script:
 
@@ -134,7 +134,7 @@ El OPK con el instalador puede obtenerse en las releases de [este repositorio](h
 
 ## Hotkeys
 
-Si se utiliza la opción `Install config` definida anteriormente, entre otras cosas como configuraciones de vídeo para la mayoría de los cores, se ajustarán los siguientes controles:
+Si se utiliza la opción `Install config` definida anteriormente, entre otras cosas como configuraciones de vídeo para la mayoría de los cores, se ajustarán los siguientes controles globalmente:
 
 |Función|Shortcut|
 |:-------|:-------|
