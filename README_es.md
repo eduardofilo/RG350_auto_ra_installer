@@ -126,7 +126,7 @@ Cuando se lanza, pregunta por dos opciones que están desactivadas por defecto:
 ![Installing options](/images/installing_options.png)
 
 * `Uninstall previous wrappers`: Borra los lanzadores OPK de los cores (wrappers) instalados con otro paquete de instalación de RetroArch.
-* `Install config`: Para instalar las configuraciones comentadas en el tercer punto de la lista anterior. Se recomienda instalar las configuraciones la primera vez y no instalarlas en reinstalaciones posteriores para evitar la pérdida de los ajustes personales hechos sobre la configuración básica.
+* `Install config`: Para instalar configuraciones básicas para la mayoría de los cores (básicamente las recopiladas por RetroGameCorps en su [guía de RetroArch](https://retrogamecorps.com/2020/12/24/guide-retroarch-on-rg350-and-rg280-devices/)). Se recomienda instalar las configuraciones la primera vez y no instalarlas en reinstalaciones posteriores para evitar la pérdida de los ajustes personales hechos sobre la configuración básica.
 
 Las opciones se marcan seleccionándolas con los controles Arriba/Abajo y pulsando `X`. Para instalar hay que seleccionar el botón `<OK>` con los controles Izquierda/Derecha y pulsar `Start`. Por algún motivo, el programa arranca con la pantalla en negro sobre OD Beta. Pulsar alguno de los controles de la cruceta para que la pantalla se ilumine.
 
