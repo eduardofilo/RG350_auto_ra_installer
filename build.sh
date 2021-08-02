@@ -18,20 +18,20 @@ OPK_NAME_ODB=RA_ODBeta_Installer_v${VERSION}_${CONF_CSV}.opk
 if [ ${BUILD_STOCK} = true ] ; then
     echo "## Building Stock RA installer"
     if [ ! -f ${DIRECTORY}/build_st/${RA_DIST_FILE} ] ; then
-        echo "    Downloading RA distribution."
+        echo "    Downloading RA distribution"
         RA_DIST_URL_ST=https://buildbot.libretro.com/nightly/dingux/mips32/${RA_DIST_FILE}
         wget -q -P ${DIRECTORY}/build_st ${RA_DIST_URL_ST}
         status=$?
-        [ ! ${status} -eq 0 ] && echo "@@ ERROR: Problem downloading RA distribution." && exit ${status}
+        [ ! ${status} -eq 0 ] && echo "@@ ERROR: Problem downloading RA distribution" && exit ${status}
     fi
 
-    echo "    Unpacking RA distribution."
+    echo "    Unpacking RA distribution"
     if [ -d ${DIRECTORY}/build_st/retroarch ] ; then
         rm -rf ${DIRECTORY}/build_st/retroarch
     fi
     7z -bb0 -bso0 -bse0 -bsp0 x -o${DIRECTORY}/build_st ${DIRECTORY}/build_st/${RA_DIST_FILE}
     status=$?
-    [ ! ${status} -eq 0 ] && echo "@@ ERROR: Problem unpacking RA distribution." && exit ${status}
+    [ ! ${status} -eq 0 ] && echo "@@ ERROR: Problem unpacking RA distribution" && exit ${status}
 
     echo "    Building RA core pack."
     mv ${DIRECTORY}/build_st/retroarch/bin/retroarch_rg350 files_st/
@@ -41,7 +41,7 @@ if [ ${BUILD_STOCK} = true ] ; then
     tar -czf ${DIRECTORY}/files_st/retroarch.tgz -C ${DIRECTORY}/build_st/retroarch/.retroarch assets core_info cores database filters system
     rm -rf ${DIRECTORY}/build_st/retroarch
 
-    echo "    Building OPK wrappers."
+    echo "    Building OPK wrappers"
     if [ -d ${DIRECTORY}/files_st/apps_ra ] ; then
         rm -rf ${DIRECTORY}/files_st/apps_ra
     fi
@@ -54,7 +54,7 @@ if [ ${BUILD_STOCK} = true ] ; then
         # https://stackoverflow.com/questions/10586153/how-to-split-a-string-into-an-array-in-bash
         IFS='|' read -r -a array <<< "${row}"
         num_el=${#array[@]}
-        [ ${num_el} -lt 5 ] && echo "@@ ERROR: Problem with CSV format." && exit 1
+        [ ${num_el} -lt 5 ] && echo "@@ ERROR: Problem with CSV format" && exit 1
         if [ ! -f ${DIRECTORY}/icons/"${array[2]}.png" ] ; then
             cp ${DIRECTORY}/icons/unknown.png ${DIRECTORY}/files_st/apps_ra/squashfs-root/"${array[2]}.png"
         else
@@ -102,7 +102,7 @@ EOF
     cd ${DIRECTORY}
     rm -rf ${DIRECTORY}/files_st/links
 
-    echo "    Building installer."
+    echo "    Building installer"
     mkdir -p ${DIRECTORY}/releases
     cat > ${DIRECTORY}/default.gcw0.desktop <<EOF
 [Desktop Entry]
@@ -133,22 +133,22 @@ fi
 if [ ${BUILD_ODBETA} = true ] ; then
     echo "## Building ODBeta RA installer"
     if [ ! -f ${DIRECTORY}/build_odb/${RA_DIST_FILE} ] ; then
-        echo "    Downloading RA distribution."
+        echo "    Downloading RA distribution"
         RA_DIST_URL_ST=https://buildbot.libretro.com/nightly/dingux/mips32-odbeta/${RA_DIST_FILE}
         wget -q -P ${DIRECTORY}/build_odb ${RA_DIST_URL_ST}
         status=$?
-        [ ! ${status} -eq 0 ] && echo "@@ ERROR: Problem downloading RA distribution." && exit ${status}
+        [ ! ${status} -eq 0 ] && echo "@@ ERROR: Problem downloading RA distribution" && exit ${status}
     fi
 
-    echo "    Unpacking RA distribution."
+    echo "    Unpacking RA distribution"
     if [ -d ${DIRECTORY}/build_odb/retroarch ] ; then
         rm -rf ${DIRECTORY}/build_odb/retroarch
     fi
     7z -bb0 -bso0 -bse0 -bsp0 x -o${DIRECTORY}/build_odb ${DIRECTORY}/build_odb/${RA_DIST_FILE}
     status=$?
-    [ ! ${status} -eq 0 ] && echo "@@ ERROR: Problem unpacking RA distribution." && exit ${status}
+    [ ! ${status} -eq 0 ] && echo "@@ ERROR: Problem unpacking RA distribution" && exit ${status}
 
-    echo "    Building RA core pack."
+    echo "    Building RA core pack"
     mv ${DIRECTORY}/build_odb/retroarch/bin/retroarch_rg350_odbeta files_odb/
     mv ${DIRECTORY}/build_odb/retroarch/retroarch_rg350_odbeta.opk files_odb/
     mkdir -p ${DIRECTORY}/build_odb/retroarch/.retroarch/cores
@@ -157,7 +157,7 @@ if [ ${BUILD_ODBETA} = true ] ; then
     tar -czf ${DIRECTORY}/files_odb/retroarch.tgz -C ${DIRECTORY}/build_odb/retroarch/.retroarch assets core_info cores database filters system
     rm -rf ${DIRECTORY}/build_odb/retroarch
 
-    echo "    Building OPK wrappers."
+    echo "    Building OPK wrappers"
     if [ -d ${DIRECTORY}/files_odb/apps_ra ] ; then
         rm -rf ${DIRECTORY}/files_odb/apps_ra
     fi
@@ -170,7 +170,7 @@ if [ ${BUILD_ODBETA} = true ] ; then
         # https://stackoverflow.com/questions/10586153/how-to-split-a-string-into-an-array-in-bash
         IFS='|' read -r -a array <<< "${row}"
         num_el=${#array[@]}
-        [ ${num_el} -lt 5 ] && echo "@@ ERROR: Problem with CSV format." && exit 1
+        [ ${num_el} -lt 5 ] && echo "@@ ERROR: Problem with CSV format" && exit 1
         if [ ! -f ${DIRECTORY}/icons/"${array[2]}.png" ] ; then
             cp ${DIRECTORY}/icons/unknown.png ${DIRECTORY}/files_odb/apps_ra/squashfs-root/"${array[2]}.png"
         else
@@ -213,7 +213,7 @@ EOF
     cd ${DIRECTORY}
     rm -rf ${DIRECTORY}/files_odb/links
 
-    echo "    Building installer."
+    echo "    Building installer"
     mkdir -p ${DIRECTORY}/releases
     cat > ${DIRECTORY}/default.gcw0.desktop <<EOF
 [Desktop Entry]
