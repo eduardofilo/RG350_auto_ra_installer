@@ -109,14 +109,14 @@ EOF
 Type=Application
 Name=RA Stock Installer v${VERSION}
 Comment=Installer for RetroArch v${VERSION} with ${CONF_CSV}
-Exec=update.sh
+Exec=update_st.sh
 Icon=icon
 Categories=applications;
 Terminal=true
 EOF
     FLIST="${DIRECTORY}/files_st"
     FLIST="${FLIST} ${DIRECTORY}/icon.png"
-    FLIST="${FLIST} ${DIRECTORY}/update.sh"
+    FLIST="${FLIST} ${DIRECTORY}/update_st.sh"
     FLIST="${FLIST} ${DIRECTORY}/v"
     FLIST="${FLIST} ${DIRECTORY}/default.gcw0.desktop"
 
