@@ -11,8 +11,8 @@ A continuación se muestra la lista completa de cores que se incluyen en el inst
 |Fuente|Core|Sistemas|Necesita ficheros|Extensiones soportadas|Observaciones|
 |:-----|:---|:-------|:----------------|:---------------------|:------------|
 |Oficial|dosbox_pure_libretro.so|DOSBox|true|zip, dosz, exe, com, bat, iso, cue, ins, img, ima, vhd, m3u, m3u8| |
-|Oficial|fbalpha2012_cps1_libretro.so|true|CPS1|zip| |
-|Oficial|fbalpha2012_cps2_libretro.so|true|CPS2|zip| |
+|Oficial|fbalpha2012_cps1_libretro.so|CPS1|true|zip| |
+|Oficial|fbalpha2012_cps2_libretro.so|CPS2|true|zip| |
 |Oficial|fbalpha2012_neogeo_libretro.so|Neo Geo|true|zip| |
 |Oficial|fceumm_libretro.so|Nintendo NES|true|fds, nes, unif, unf|Disk System necesita BIOS: `disksys.rom` (md5: `ca30b50f880eb660a320674ed365ef7a`)|
 |Oficial|gambatte_libretro.so|GB/GBC|true|gb, gbc, dmg|BIOS opcional: `gb_bios.bin` (md5: `32fbbd84168d3482956eb3c5051637f5`), `gbc_bios.bin` (md5: `dbfce9db9deaa2567f6a84fde55f9680`)|
