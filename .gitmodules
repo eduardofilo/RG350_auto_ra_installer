@@ -1,0 +1,3 @@
+[submodule "opendingux_ra_cores_unofficial"]
+	path = opendingux_ra_cores_unofficial
+	url = git@github.com:Poligraf/opendingux_ra_cores_unofficial.git

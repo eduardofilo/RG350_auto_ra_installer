@@ -1,0 +1,15 @@
+releases/
+build_st/
+build_odb/
+squashfs-root/files/roms
+bios.tgz
+files_st/retroarch_rg350.opk
+files_st/retroarch_rg350
+files_st/retroarch.tgz
+files_st/apps_ra.tgz
+files_st/links.tgz
+files_odb/retroarch_rg350_odbeta.opk
+files_odb/retroarch_rg350_odbeta
+files_odb/retroarch.tgz
+files_odb/apps_ra.tgz
+files_odb/links.tgz
