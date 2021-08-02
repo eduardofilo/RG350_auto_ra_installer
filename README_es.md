@@ -127,6 +127,8 @@ Cuando se lanza, pregunta por dos opciones que están desactivadas por defecto:
 * Uninstall previous wrappers: Borra los lanzadores OPK de los cores (wrappers) instalados con otro paquete de instalación de RetroArch.
 * Install config: Para instalar las configuraciones comentadas en el tercer punto de la lista anterior. Se recomienda instalar las configuraciones la primera vez y no instalarlas en reinstalaciones posteriores para evitar la pérdida de los ajustes personales hechos sobre la configuración básica.
 
+Las opciones se marcan seleccionándolas con los controles Arriba/Abajo y pulsando `X`. Para instalar hay que seleccionar el botón `<OK>` con los controles Izquierda/Derecha y pulsar `Start`. Por algún motivo, el programa arranca con la pantalla en negro sobre OD Beta. Pulsar alguno de los controles de la cruceta para que la pantalla se ilumine.
+
 El OPK con el instalador puede obtenerse en las releases de [este repositorio](https://github.com/eduardofilo/RG350_auto_ra_installer/releases/latest).
 
 ## Hotkeys
