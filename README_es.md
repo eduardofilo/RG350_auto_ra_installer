@@ -107,10 +107,9 @@ El script se ha diseñado para ser utilizado en Linux sobre bash. El procedimien
     ```
 
 3. Crear el fichero CSV con la parametrización que nos interese. Nos podemos basar en los dos ficheros incluidos como ejemplo en el repositorio (`official.csv` y `poligraf.csv`). Es importante tener en cuenta que el separador de columnas es una pila (|) y no una coma (,) como habitualmente en este tipo de ficheros.
-
 4. Ajustar el parámetro `CONF_CSV` al principio del script con el nombre del fichero CSV anterior (sin extensión).
-
-5. Ejecutar el script:
+5. Poner la fecha de la distribución RetroArch desde la que se quiere construir el instalador en el fichero `v`. Naturalmente si se pone una fecha futura el script fallará.
+6. Ejecutar el script:
 
     ```bash
     $ cd RG350_ra_installer
