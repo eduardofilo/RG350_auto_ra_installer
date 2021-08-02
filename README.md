@@ -100,7 +100,7 @@ The script is designed to be used on Linux with bash. The procedure to use it is
     $ sudo apt install git wget p7zip-full tar sed squashfs-tools
     ```
 
-2. Download repository with submodules (**IMPORTANT**):
+2. Download repository with submodules (**IMPORTANT** don't forget the `--recurse-submodules` option):
 
     ```bash
     $ git clone --recurse-submodules https://github.com/eduardofilo/RG350_ra_installer.git
