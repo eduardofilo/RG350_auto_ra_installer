@@ -33,7 +33,7 @@ if [ ${BUILD_STOCK} = true ] ; then
     status=$?
     [ ! ${status} -eq 0 ] && echo "@@ ERROR: Problem unpacking RA distribution" && exit ${status}
 
-    echo "    Building RA core pack."
+    echo "    Building RA core pack"
     mv ${DIRECTORY}/build_st/retroarch/bin/retroarch_rg350 files_st/
     mv ${DIRECTORY}/build_st/retroarch/retroarch_rg350.opk files_st/
     mkdir -p ${DIRECTORY}/build_st/retroarch/.retroarch/cores
