@@ -107,8 +107,8 @@ EOF
     cat > ${DIRECTORY}/default.gcw0.desktop <<EOF
 [Desktop Entry]
 Type=Application
-Name=RA Stock Installer v${VERSION}
-Comment=Installer for RetroArch v${VERSION} with ${CONF_CSV}
+Name=RA Inst. v${VERSION}
+Comment=RetroArch installer v${VERSION} for Stock with ${CONF_CSV}
 Exec=update_st.sh
 Icon=icon
 Categories=applications;
@@ -218,8 +218,8 @@ EOF
     cat > ${DIRECTORY}/default.gcw0.desktop <<EOF
 [Desktop Entry]
 Type=Application
-Name=RA OD Beta Installer v${VERSION}
-Comment=Installer for RetroArch v${VERSION} with ${CONF_CSV}
+Name=RA Inst. v${VERSION}
+Comment=RetroArch installer v${VERSION} for OD Beta with ${CONF_CSV}
 Exec=update_odb.sh
 Icon=icon
 Categories=applications;
