@@ -6,6 +6,7 @@ BUILD_STOCK=true        # Build Stock version of installer
 BUILD_ODBETA=true       # Build ODBeta version of installer
 CONF_CSV=official       # Name of CSV with parameterization, without extension
 #CONF_CSV=poligraf
+#CONF_CSV=adam
 
 VERSION=`cat v`
 DIRECTORY=$(pwd)
