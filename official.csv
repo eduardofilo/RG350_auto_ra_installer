@@ -11,8 +11,9 @@ Nintendo NES|FC_QuickNES|fc|true|quicknes_libretro.so|QuickNES|zip,nes,7z|/media
 Nintendo GBA|GBA_gpSP|gba|true|gpsp_libretro.so|gpSP|gba,zip,7z|/media/sdcard/roms/GBA/
 Nintendo GBA|GBA_mGBA|gba|true|mgba_libretro.so|mGBA|gba,zip,7z|/media/sdcard/roms/GBA/
 Nintendo GBC|GBC|gbc|true|gambatte_libretro.so|Gambatte|gbc,zip,7z|/media/sdcard/roms/GBC/
+Nintendo GBC|GBC_gear|gbc|true|gearboy_libretro.so|Gearboy|gbc,dmg,cgb,sgb,zip,7z|/media/sdcard/roms/GBC/
 Nintendo GB|GB|gb|true|gambatte_libretro.so|Gambatte|gb,gz,zip,7z|/media/sdcard/roms/GB/
-Nintendo GB|GB_gear|gb|true|gearboy_libretro.so|Gearboy|gb,dmg,gbc,cgb,sgb,zip,7z|/media/sdcard/roms/GB/
+Nintendo GB|GB_gear|gb|true|gearboy_libretro.so|Gearboy|gb,dmg,cgb,sgb,zip,7z|/media/sdcard/roms/GB/
 SEGA GG|GG|gg|true|genesis_plus_gx_libretro.so|Genesis Plus|zip,gg,7z|/media/sdcard/roms/GG/
 SEGA GG|GG_gearsys|gg|true|gearsystem_libretro.so|Gearsystem|gg,bin,rom,zip,7z|/media/sdcard/roms/GG/
 Atari Lynx|LYNX|atari_lynx|true|handy_libretro.so|Handy|zip,lnx,7z|/media/sdcard/roms/LYNX/
