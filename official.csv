@@ -12,7 +12,9 @@ Nintendo GBA|GBA_gpSP|gba|true|gpsp_libretro.so|gpSP|gba,zip,7z|/media/sdcard/ro
 Nintendo GBA|GBA_mGBA|gba|true|mgba_libretro.so|mGBA|gba,zip,7z|/media/sdcard/roms/GBA/
 Nintendo GBC|GBC|gbc|true|gambatte_libretro.so|Gambatte|gbc,zip,7z|/media/sdcard/roms/GBC/
 Nintendo GB|GB|gb|true|gambatte_libretro.so|Gambatte|gb,gz,zip,7z|/media/sdcard/roms/GB/
+Nintendo GB|GB_gear|gb|true|gearboy_libretro.so|Gearboy|gb,dmg,gbc,cgb,sgb,zip,7z|/media/sdcard/roms/GB/
 SEGA GG|GG|gg|true|genesis_plus_gx_libretro.so|Genesis Plus|zip,gg,7z|/media/sdcard/roms/GG/
+SEGA GG|GG_gearsys|gg|true|gearsystem_libretro.so|Gearsystem|gg,bin,rom,zip,7z|/media/sdcard/roms/GG/
 Atari Lynx|LYNX|atari_lynx|true|handy_libretro.so|Handy|zip,lnx,7z|/media/sdcard/roms/LYNX/
 MAME2003|MAME2003|mame2003|true|mame2003_libretro.so||zip,7z|/media/sdcard/roms/MAME2003/
 MAME2003|MAME2003_PLUS|mame2003+|true|mame2003_plus_libretro.so||zip,7z|/media/sdcard/roms/MAME2003/
@@ -32,8 +34,10 @@ SEGA CD|SEGACD_Pic|segacd|true|picodrive_libretro.so|Picodrive|bin,chd,7z,zip|/m
 Nintendo SNES|SFC_S9x2005|sfc|true|snes9x2005_libretro.so|Snes9x|smc,sfc,zip,7z|/media/sdcard/roms/SFC/
 Nintendo SNES|SFC_S9x2005Plus|sfc|true|snes9x2005_plus_libretro.so|Snes9x+|smc,sfc,zip,7z|/media/sdcard/roms/SFC/
 SEGA SG-1000|SG1000|sg1000|true|genesis_plus_gx_libretro.so|Genesis Plus|zip,sg,7z|/media/sdcard/roms/SG1000/
+SEGA SG-1000|SG1000_gearsys|sg1000|true|gearsystem_libretro.so|Gearsystem|sg,bin,rom,zip,7z|/media/sdcard/roms/SG1000/
 SEGA MS|SMS_Gen|sms|true|genesis_plus_gx_libretro.so|Genesis Plus|zip,sms,7z|/media/sdcard/roms/SMS/
 SEGA MS|SMS_Pic|sms|true|picodrive_libretro.so|Picodrive|zip,sms,7z|/media/sdcard/roms/SMS/
+SEGA MS|SMS_gearsys|sms|true|gearsystem_libretro.so|Gearsystem|sms,bin,rom,zip,7z|/media/sdcard/roms/SMS/
 Watara Supervision|SUPERVISION|supervision|true|potator_libretro.so|Potator|sv,bin,7z,zip|/media/sdcard/roms/SUPERVISION/
 TIC-80|TIC80|tic80|true|tic80_libretro.so||tic,7z,zip|/media/sdcard/roms/TIC80/
 Phillips Videopac|VIDEOPAC|videopac|true|o2em_libretro.so|O2em|bin,7z,zip|/media/sdcard/roms/VIDEOPAC/

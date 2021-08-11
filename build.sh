@@ -17,7 +17,7 @@ OPK_NAME_ODB=RA_ODBeta_Installer_v${VERSION}_${CONF_CSV}.opk
 
 # Stock
 if [ ${BUILD_STOCK} = true ] ; then
-    echo "## Building Stock RA installer"
+    echo "# Building Stock RA installer"
     if [ ! -f ${DIRECTORY}/build_st/${RA_DIST_FILE} ] ; then
         echo "    Downloading RA distribution"
         RA_DIST_URL_ST=https://buildbot.libretro.com/nightly/dingux/mips32/${RA_DIST_FILE}
@@ -132,7 +132,7 @@ fi
 
 # ODBeta
 if [ ${BUILD_ODBETA} = true ] ; then
-    echo "## Building ODBeta RA installer"
+    echo "# Building ODBeta RA installer"
     if [ ! -f ${DIRECTORY}/build_odb/${RA_DIST_FILE} ] ; then
         echo "    Downloading RA distribution"
         RA_DIST_URL_ST=https://buildbot.libretro.com/nightly/dingux/mips32-odbeta/${RA_DIST_FILE}
