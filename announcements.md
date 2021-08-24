@@ -9,7 +9,7 @@ Change log
 * Updated to 2021-08-01 RetroArch distribution (1.9.8 version).
 * Script parameterizable to build any combination of system/core that you like editing a CSV file.
 * Option to uninstall OPKs from a previous installation.
-* Two packages are offered for each firmware type (stock/ROGUE or ODBeta). Each of them are been builded with a different CSV (included in reposiory; see README):
+* Two packages are offered for each firmware type (stock/ROGUE or ODBeta). Each of them are been configured with a different CSV (included in reposiory; see README):
     * `RA_Stock_Installer_v2021-08-01_official.opk` and `RA_ODBeta_Installer_v2021-08-01_official.opk` built from official.csv with cores from RetroArch official distribution.
     * `RA_Stock_Installer_v2021-08-01_poligraf.opk` and `RA_ODBeta_Installer_v2021-08-01_poligraf.opk` built from poligraf.csv with cores from Poligraf compilation.
 
@@ -41,10 +41,10 @@ Change log
 
 * Updated to 2021-08-22 RetroArch distribution (1.9.8 version).
 * Attempted solution to problems closing content on ODBeta.
-* Two packages are offered for each firmware type (stock/ROGUE or ODBeta). Each of them are been builded with a different CSV (included in reposiory; see README):
+* Two packages are offered for each firmware type (stock/ROGUE or ODBeta). Each of them are been configured with a different CSV (included in reposiory; see README):
     * `RA_Stock_Installer_v2021-08-22_official.opk` and `RA_ODBeta_Installer_v2021-08-22_official.opk` built from `official.csv` with cores from RetroArch official distribution.
     * `RA_Stock_Installer_v2021-08-22_poligraf.opk` and `RA_ODBeta_Installer_v2021-08-22_poligraf.opk` built from `poligraf.csv` with cores from Poligraf compilation.
-* Package to update the RA cores installed in Adam image: `RA_ODBeta_Installer_v2021-08-22_adam.opk`. Don't mark any option (`Unistall previous wrappers` nor `Install config`) on installer.
+* Package to update the RA cores installed in Adam image: `RA_ODBeta_Installer_v2021-08-22_adam.opk`. Don't check any option (`Unistall previous wrappers` nor `Install config`) on installer.
 
 https://github.com/eduardofilo/RG350_auto_ra_installer/releases/tag/v2021-08-22
 
@@ -63,49 +63,67 @@ Cambios
 
 https://github.com/eduardofilo/RG350_auto_ra_installer/releases/tag/v2021-08-22
 
+------------
+
+-------------------
+
+New release v2021-08-23:
+
+See change log in GitHub release.
+
+https://github.com/eduardofilo/RG350_auto_ra_installer/releases/tag/v2021-08-23
+
+----------------
+
+Nueva release v2021-08-23:
+
+Cambios
+
+* Actualizado a la versión 2021-08-23 de la distribución RetroArch (versión 1.9.8).
+* Se deshace la solución al problema al cerrar contenidos sobre ODBeta porque tiene impacto en el rendimiento.
+* Solucionado el cuelgue al abrir los ajustes de Audio.
+* Se ofrecen dos paquetes para cada tipo de firmware (stock/ROGUE u ODBeta). Cada uno de ellos ha sido construido con un CSV diferente (incluidos en el repositorio; ver README):
+    * `RA_Stock_Installer_v2021-08-23_official.opk` y `RA_ODBeta_Installer_v2021-08-23_official.opk` construido desde `official.csv` con los cores de la distribución oficial de RetroArch.
+    * `RA_Stock_Installer_v2021-08-23_poligraf.opk` y `RA_ODBeta_Installer_v2021-08-23_poligraf.opk` construido desde `poligraf.csv` con los cores de la compilación de Poligraf.
+* Paquete para actualizar los cores RA instalados en la imagen Adán: `RA_ODBeta_Installer_v2021-08-23_adam.opk`. No marcar ninguna opción (`Unistall previous wrappers` ni `Install config`) en el instalador.
+
+https://github.com/eduardofilo/RG350_auto_ra_installer/releases/tag/v2021-08-23
+
+
 ----------
 
-ODBeta installer for RG350/P/M and RG280M/V with Adam image cores.
-Instalador para sistema ODBeta en RG350/P/M y RG280M/V con los cores de imagen Adán.
+ODBeta installer with Adam image cores.
+Instalador para sistema ODBeta con los cores de imagen Adán.
 
 ----------
 
-ODBeta installer for RG350/P/M and RG280M/V with official cores.
-Instalador para sistema ODBeta en RG350/P/M y RG280M/V con los cores oficiales.
+ODBeta installer with official cores.
+Instalador para sistema ODBeta con los cores oficiales.
 
 ----------
 
-ODBeta installer for RG350/P/M and RG280M/V with Poligraf cores.
-Instalador para sistema ODBeta en RG350/P/M y RG280M/V con los cores de Poligraf.
+ODBeta installer with Poligraf cores.
+Instalador para sistema ODBeta con los cores de Poligraf.
 
 ----------
 
-Stock/ROGUE installer for RG350/P/M and RG280M/V with official cores.
-Instalador para sistema stock/ROGUE en RG350/P/M y RG280M/V con los cores oficiales.
+Stock/ROGUE installer with official cores.
+Instalador para sistema stock/ROGUE con los cores oficiales.
 
 ----------
 
-Stock/ROGUE installer for RG350/P/M and RG280M/V with Poligraf cores.
-Instalador para sistema stock/ROGUE en RG350/P/M y RG280M/V con los cores de Poligraf.
+Stock/ROGUE installer with Poligraf cores.
+Instalador para sistema stock/ROGUE con los cores de Poligraf.
 
 ----------
 
 # Discords
-La Retro Cueva / comparte-tu-contenido
 RG350 (Español) / noticias-releases
 Retro Game Handhelds / Device releases / od-stock
-Retro Game Handhelds / Device releases / opendingux
+Retro Game Handhelds / Device releases / od-beta
 ANBERNIC Official / development
 ------------------
 **RetroArch installer release v2021-08-01**
-
-**Change log**:
-* Updated to 2021-08-01 RetroArch distribution (1.9.8 version).
-* Build script parameterizable to build any combination of system/core that you like editing a CSV file.
-* Option to uninstall OPKs from a previous installation.
-* In this release two packages are offered for each firmware type (stock/ROGUE or ODBeta). Each of them have been built with a different CSV (included in reposiory; see README). If you install both packages, be careful not to check the option `Uninstall previous wrappers` with the second one.
-    * `RA_Stock_Installer_v2021-08-01_official.opk` and `RA_ODBeta_Installer_v2021-08-01_official.opk` built from `official.csv` with cores from RetroArch official distribution.
-    * `RA_Stock_Installer_v2021-08-01_poligraf.opk` and `RA_ODBeta_Installer_v2021-08-01_poligraf.opk` built from `poligraf.csv` with cores from [Poligraf compilation](https://github.com/Poligraf/opendingux_ra_cores_unofficial).
 
 https://github.com/eduardofilo/RG350_auto_ra_installer/releases/tag/v2021-08-01
 
@@ -127,14 +145,6 @@ https://github.com/eduardofilo/RG350_auto_ra_installer/releases/tag/v2021-08-01
 ------------------
 **RetroArch installer release v2021-08-22**
 
-**Change log**:
-* Updated to 2021-08-22 RetroArch distribution (1.9.8 version).
-* Attempted solution to problems closing content on ODBeta.
-* Two packages are offered for each firmware type (stock/ROGUE or ODBeta). Each of them have been built with a different CSV (included in reposiory; see README). If you install both packages, be careful not to check the option `Uninstall previous wrappers` with the second one.
-    * `RA_Stock_Installer_v2021-08-22_official.opk` and `RA_ODBeta_Installer_v2021-08-22_official.opk` built from `official.csv` with cores from RetroArch official distribution.
-    * `RA_Stock_Installer_v2021-08-22_poligraf.opk` and `RA_ODBeta_Installer_v2021-08-22_poligraf.opk` built from `poligraf.csv` with cores from [Poligraf compilation](https://github.com/Poligraf/opendingux_ra_cores_unofficial).
-* Package to update the RA cores installed in Adam image: `RA_ODBeta_Installer_v2021-08-22_adam.opk`. Don't mark any option (`Unistall previous wrappers` nor `Install config`) on installer.
-
 https://github.com/eduardofilo/RG350_auto_ra_installer/releases/tag/v2021-08-22
 
 -----------------
@@ -150,3 +160,26 @@ https://github.com/eduardofilo/RG350_auto_ra_installer/releases/tag/v2021-08-22
 * Paquete para actualizar los cores RA instalados en la imagen Adán: `RA_ODBeta_Installer_v2021-08-22_adam.opk`. No marcar ninguna opción (`Unistall previous wrappers` ni `Install config`) en el instalador.
 
 https://github.com/eduardofilo/RG350_auto_ra_installer/releases/tag/v2021-08-22
+
+-------------------
+
+
+------------------
+**RetroArch installer release v2021-08-23**
+
+https://github.com/eduardofilo/RG350_auto_ra_installer/releases/tag/v2021-08-23
+
+-----------------
+
+**Instalador RetroArch release v2021-08-23**
+
+**Cambios**:
+* Actualizado a la versión 2021-08-23 de la distribución RetroArch (versión 1.9.8).
+* Se deshace la solución al problema al cerrar contenidos sobre ODBeta porque tiene impacto en el rendimiento.
+* Solucionado el cuelgue al abrir los ajustes de Audio.
+* Se ofrecen dos paquetes para cada tipo de firmware (stock/ROGUE u ODBeta). Cada uno de ellos ha sido construido con un CSV diferente (incluidos en el repositorio; ver README):
+    * `RA_Stock_Installer_v2021-08-23_official.opk` y `RA_ODBeta_Installer_v2021-08-23_official.opk` construido desde `official.csv` con los cores de la distribución oficial de RetroArch.
+    * `RA_Stock_Installer_v2021-08-23_poligraf.opk` y `RA_ODBeta_Installer_v2021-08-23_poligraf.opk` construido desde `poligraf.csv` con los cores de la compilación de Poligraf.
+* Paquete para actualizar los cores RA instalados en la imagen Adán: `RA_ODBeta_Installer_v2021-08-23_adam.opk`. No marcar ninguna opción (`Unistall previous wrappers` ni `Install config`) en el instalador.
+
+https://github.com/eduardofilo/RG350_auto_ra_installer/releases/tag/v2021-08-23
