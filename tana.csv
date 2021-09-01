@@ -1,0 +1,29 @@
+OPK Wrapper Title|OPK Wrapper file name|Icon|Browse|Core|Core name|ROM extensions|ROM path
+Atari 2600|A2600|a2600|true|stella2014_libretro.so|Stella|bin,a26,7z,zip|/media/sdcard/roms/A2600/
+Atari 7800|A7800|a7800|true|prosystem_libretro.so|ProSystem|bin,a78,7z,zip|/media/sdcard/roms/A7800/
+CPS1|CPS1|cps|true|fbalpha2012_cps1_libretro.so|FBA|zip,7z|/media/sdcard/roms/CPS/
+CPS2|CPS2|cps|true|fbalpha2012_cps2_libretro.so|FBA|zip,7z|/media/sdcard/roms/CPS/
+Nintendo NES|FC_FCEUmm|fc|true|fceumm_libretro.so|FCEUmm|zip,nes,7z|/media/sdcard/roms/FC/
+SEGA GG|GG|gg|true|genesis_plus_gx_libretro.so|Genesis Plus|zip,gg,7z|/media/sdcard/roms/GG/
+Atari Lynx|LYNX|atari_lynx|true|handy_libretro.so|Handy|zip,lnx,7z|/media/sdcard/roms/LYNX/
+SEGA MD|MD_Pic|md|true|picodrive_libretro.so|Picodrive|zip,bin,smd,md,7z|/media/sdcard/roms/MD/
+Mr.Boom|MrBoom|mrboom|false|mrboom_libretro.so|||
+Neo Geo Pocket|NGP|ngp|true|race_libretro.so|Race|ngp,ngc,7z,zip|/media/sdcard/roms/NGP/
+PC Engine CD|PCECD|pcecd|true|mednafen_pce_fast_libretro.so|Mednafen PCE|pce,tg16,cue,chd,7z,zip|/media/sdcard/roms/PCECD/
+PC Engine|PCE|pce|true|mednafen_pce_fast_libretro.so|Mednafen PCE|pce,tg16,cue,7z,zip|/media/sdcard/roms/PCE/
+PokeMini|POKEMINI|pokemini|true|pokemini_libretro.so||min,zip,7z|/media/sdcard/roms/POKEMINI/
+Doom|PRBOOM|doom|true|prboom_libretro.so|PrBoom|wad,zip,7z|/media/sdcard/roms/DOOM/
+Quake|QUAKE|quake|true|tyrquake_libretro.so|TyrQuake|pak,zip,7z|/media/sdcard/roms/QUAKE/
+SEGA SG-1000|SG1000_gearsys|sg1000|true|gearsystem_libretro.so|Gearsystem|sg,bin,rom,zip,7z|/media/sdcard/roms/SG1000/
+SEGA MS|SMS_Pic|sms|true|picodrive_libretro.so|Picodrive|zip,sms,7z|/media/sdcard/roms/SMS/
+Watara Supervision|SUPERVISION|supervision|true|potator_libretro.so|Potator|sv,bin,7z,zip|/media/sdcard/roms/SUPERVISION/
+WonderSwan|WS|ws|true|mednafen_wswan_libretro.so|Mednafen Wswan|ws,wsc,zip,7z|/media/sdcard/roms/WSC/
+2048|2048|2048|false|2048_libretro.so|||
+Atari 5200|A5200|a5200|true|atari800_libretro.so|Atari800|xfd,atr,cdm,cas,bin,a52,zip,atx,car,com,xex,7z|/media/sdcard/roms/A5200/
+Cave Story|CAVESTORY|cavestory|true|nxengine_libretro.so|NXengine|exe,zip,7z|/media/sdcard/roms/CAVESTORY/
+MSX|MSX_Blue|msx|true|bluemsx_libretro.so|BlueMSX|rom,ri,mx1,mx2,col,dsk,cas,sg,sc,m3u,zip,7z|/media/sdcard/roms/MSX/
+Outrun|OUTRUN|outrun|true|cannonball_libretro.so|Cannonball|game,88,zip,7z|/media/sdcard/roms/OUTRUN/
+Palm|PALM|palm|true|mu_libretro.so|Mu|prc,pqa,img,7z|/media/sdcard/roms/PALM/
+NEC PC-88|PC88|pc88|true|quasi88_libretro.so|Quasi88|d88,u88,m3u,zip,7z|/media/sdcard/roms/PC88/
+ZX Spectrum|ZX|zx|true|fuse_libretro.so|FUSE|tzx,tap,z80,rzx,scl,trd,dsk,zip,7z|/media/sdcard/roms/ZX/
+

@@ -89,8 +89,31 @@ Cambios
 
 https://github.com/eduardofilo/RG350_auto_ra_installer/releases/tag/v2021-08-23
 
+-------------------
+-------------------
+
+New release v2021-08-30:
+
+See change log in GitHub release.
+
+https://github.com/eduardofilo/RG350_auto_ra_installer/releases/tag/v2021-08-30
+
+----------------
+
+Nueva release v2021-08-30:
+
+Cambios
+
+* Actualizado a la versión 2021-08-23 de la distribución RetroArch (versión 1.9.8). Mejora supuestamente la compatibilidad con el juego Demons of Asteborg de Megadrive.
+* Se ofrecen dos paquetes para cada tipo de firmware (stock/ROGUE u ODBeta). Cada uno de ellos ha sido construido con un CSV diferente (incluidos en el repositorio; ver README):
+    * `RA_Stock_Installer_v2021-08-30_official.opk` y `RA_ODBeta_Installer_v2021-08-30_official.opk` construido desde `official.csv` con los cores de la distribución oficial de RetroArch.
+    * `RA_Stock_Installer_v2021-08-30_poligraf.opk` y `RA_ODBeta_Installer_v2021-08-30_poligraf.opk` construido desde `poligraf.csv` con los cores de la compilación de Poligraf.
+* Paquete para actualizar los cores RA instalados en la imagen Adán: `RA_ODBeta_Installer_v2021-08-30_adam.opk`. No marcar ninguna opción (`Unistall previous wrappers` ni `Install config`) en el instalador.
+
+https://github.com/eduardofilo/RG350_auto_ra_installer/releases/tag/v2021-08-30
 
 ----------
+-------------------
 
 ODBeta installer with Adam image cores.
 Instalador para sistema ODBeta con los cores de imagen Adán.

@@ -5,9 +5,7 @@ set -e
 # BEGIN PARAMETER ZONE
 BUILD_STOCK=true        # Build Stock version of installer
 BUILD_ODBETA=true       # Build ODBeta version of installer
-CONF_CSV=official       # Name of CSV with parameterization, without extension
-#CONF_CSV=poligraf
-#CONF_CSV=adam
+CONF_CSV=official       # Name of CSV with parameterization, without extension (official, poligraf, adam, tana)
 # END PARAMETER ZONE
 
 VERSION=`cat v`
