@@ -26,4 +26,3 @@ Outrun|OUTRUN|outrun|true|cannonball_libretro.so|Cannonball|game,88,zip,7z|/medi
 Palm|PALM|palm|true|mu_libretro.so|Mu|prc,pqa,img,7z|/media/sdcard/roms/PALM/
 NEC PC-88|PC88|pc88|true|quasi88_libretro.so|Quasi88|d88,u88,m3u,zip,7z|/media/sdcard/roms/PC88/
 ZX Spectrum|ZX|zx|true|fuse_libretro.so|FUSE|tzx,tap,z80,rzx,scl,trd,dsk,zip,7z|/media/sdcard/roms/ZX/
-

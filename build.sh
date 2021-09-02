@@ -61,13 +61,20 @@ if [ ${BUILD_STOCK} = true ] ; then
         else
             cp ${DIRECTORY}/icons/"${array[2]}.png" ${DIRECTORY}/files_st/apps_ra/squashfs-root/
         fi
+        [ "${array[3]}" = true ] && browse=" \"\$1\"" || browse=""
         [ "${array[5]}" = "" ] && core_desc="" || core_desc=" with ${array[5]} core"
+        cat > ${DIRECTORY}/files_st/apps_ra/squashfs-root/exec.sh <<EOF
+#!/bin/sh
+/media/data/local/bin/retroarch_rg350 -v -L /media/data/local/home/.retroarch/cores/${array[4]} --config /media/data/local/home/.retroarch/retroarch.cfg${browse}
+exit 0
+EOF
+        chmod +x ${DIRECTORY}/files_st/apps_ra/squashfs-root/exec.sh
         [ "${array[3]}" = "true" ] && browse=" %f" || browse=""
         cat > ${DIRECTORY}/files_st/apps_ra/squashfs-root/default.gcw0.desktop <<EOF
 [Desktop Entry]
 Name=${array[0]}
 Comment=${array[0]} on RA${core_desc}
-Exec=/media/data/local/bin/retroarch_rg350 -v -L /media/data/local/home/.retroarch/cores/${array[4]} --config /media/data/local/home/.retroarch/retroarch.cfg${browse}
+Exec=exec.sh${browse}
 Terminal=false
 Type=Application
 StartupNotify=true
