@@ -19,8 +19,8 @@ SEGA GG|GG_gearsys|gg|true|gearsystem_libretro.so|Gearsystem|gg,bin,rom,zip,7z|/
 Atari Lynx|LYNX|atari_lynx|true|handy_libretro.so|Handy|zip,lnx,7z|/media/sdcard/roms/LYNX/
 MAME2003|MAME2003|mame2003|true|mame2003_libretro.so||zip,7z|/media/sdcard/roms/MAME2003/
 MAME2003|MAME2003_PLUS|mame2003+|true|mame2003_plus_libretro.so||zip,7z|/media/sdcard/roms/MAME2003/
-SEGA MD|MD_Gen|md|true|genesis_plus_gx_libretro.so|Genesis Plus|zip,bin,smd,md,7z|/media/sdcard/roms/MD/
-SEGA MD|MD_Pic|md|true|picodrive_libretro.so|Picodrive|zip,bin,smd,md,7z|/media/sdcard/roms/MD/
+SEGA MD|MD_Gen|md|true|genesis_plus_gx_libretro.so|Genesis Plus|zip,bin,smd,md,mdx,gen,7z|/media/sdcard/roms/MD/
+SEGA MD|MD_Pic|md|true|picodrive_libretro.so|Picodrive|zip,bin,smd,md,gen,7z|/media/sdcard/roms/MD/
 Mr.Boom|MrBoom|mrboom|false|mrboom_libretro.so|||
 Neo Geo|NEOGEO|neogeo|true|fbalpha2012_neogeo_libretro.so|FBA|zip,7z|/media/sdcard/roms/NEOGEO/
 Neo Geo Pocket|NGP|ngp|true|race_libretro.so|Race|ngp,ngc,7z,zip|/media/sdcard/roms/NGP/
