@@ -66,7 +66,7 @@ Below is the full list of cores that are included in the final generated OPK ins
 |Poligraf|nxengine_libretro.so|Cave Story|true|exe|Needs game files|
 |Poligraf|pcsx_rearmed_libretro.so|PlayStation|true|bin,cue,img,mdf,pbp,toc,cbn,m3u,ccd,chd|Poor performance|
 |Poligraf|[pocketcdg_libretro.so](https://docs.libretro.com/library/pocketcdg/)|PocketCDG|true|cdg| |
-|Poligraf|puae_libretro.so|Commodore Amiga|true|adf, adz, dms, fdi, ipf, hdf, hdz, lha, slave, info, cue, ccd, nrg, mds, iso, chd, uae, m3u, zip, 7z|Needs BIOS: `kick34005.A500` (md5: `82a21c1890cae844b3df741f2762d48d`)|
+|Poligraf|puae_libretro.so|Commodore Amiga|true|adf, adz, dms, fdi, ipf, hdf, hdz, lha, slave, info, cue, ccd, nrg, mds, iso, chd, uae, m3u, zip, 7z, rp9|Needs BIOS: `kick34005.A500` (md5: `82a21c1890cae844b3df741f2762d48d`)|
 |Poligraf|quasi88_libretro.so|NEC PC-88|true|d88,u88,m3u|Needs BIOS: `quasi88/n88.rom`, `quasi88/n88_0.rom`|
 |Poligraf|reminiscence_libretro.so|Flashback|true|map, aba, seq, lev|Needs game files. I couldn't get it to work.|
 |Poligraf|stonesoup_libretro.so|Dungeon Crawl Stone Soup|true|crawlrc|Needs [game files](https://github.com/libretro/crawl-ref/tree/master/crawl-ref/source/dat) and an empty file `game.crawlrc` (instructions [here](https://docs.libretro.com/library/stone_soup/#how-to-start-the-dungeon-crawl-stone-soup-core)). `Unsupported video mode` on RG280/stock/ROGUE, reboots on beta.|
