@@ -45,7 +45,7 @@ Below is the full list of cores that are included in the final generated OPK ins
 |Official|vice_x64_libretro.so|C64|true|d64, d71, d80, d81, d82, g64, g41, x64, t64, tap, prg, p00, crt, bin, zip, gz, d6z, d7z, d8z, g6z, g4z, x6z, cmd, m3u, vfl, vsf, nib, nbz, d2m, d4m| |
 |Poligraf|2048_libretro.so|[2048](https://en.wikipedia.org/wiki/2048_(video_game))|false| | |
 |Poligraf|81_libretro.so|Sinclair ZX81|true|p, tzx, t81| |
-|Poligraf|atari800_libretro.so|Atari 5200|true|xfd,atr,cdm,cas,bin,a52,zip,atx,car,com,xex|Needs BIOS to emulate Atari5200: `5200.rom` (md5: `281f20ea4320404ec820fb7ec0693b38`)|
+|Poligraf|atari800_libretro.so|Atari 5200|true|xfd, atr, cdm, cas, bin, a52, zip, atx, car, com, xex|Needs BIOS to emulate Atari5200: `5200.rom` (md5: `281f20ea4320404ec820fb7ec0693b38`)|
 |Poligraf|bk_libretro.so|Elektronika - BK-0010/BK-0011|true|bin|Needs BIOS (model `BK-0010`): `bk/BASIC10.ROM` (md5: `3fa774326d75410a065659aea80252f0`), `bk/FOCAL10.ROM` (md5: `5737f972e8638831ab71e9139abae052`), `bk/MONIT10.ROM` (md5: `95f8c41c6abf7640e35a6a03cecebd01`). Unsupported video mode on stock/ROGUE.|
 |Poligraf|bluemsx_libretro.so|MSX, MSX2|true|rom,ri,mx1,mx2,col,dsk,cas,sg,sc,m3u|Needs BIOS in `.retroarch/system/Machines`|
 |Poligraf|cannonball_libretro.so|SEGA Outrun|true|game, 88|Needs game files and a dummy file with `.game` extension|
