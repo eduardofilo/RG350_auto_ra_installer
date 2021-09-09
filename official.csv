@@ -23,7 +23,7 @@ SEGA MD|MD_Gen|md|true|genesis_plus_gx_libretro.so|Genesis Plus|zip,bin,smd,md,m
 SEGA MD|MD_Pic|md|true|picodrive_libretro.so|Picodrive|zip,bin,smd,md,gen,7z|/media/sdcard/roms/MD/
 Mr.Boom|MrBoom|mrboom|false|mrboom_libretro.so|||
 Neo Geo|NEOGEO|neogeo|true|fbalpha2012_neogeo_libretro.so|FBA|zip,7z|/media/sdcard/roms/NEOGEO/
-Neo Geo Pocket|NGP|ngp|true|race_libretro.so|Race|ngp,ngc,7z,zip|/media/sdcard/roms/NGP/
+Neo Geo Pocket|NGP|ngp|true|race_libretro.so|Race|ngp,ngc,ngpc,npc,zip,7z|/media/sdcard/roms/NGP/
 PC Engine CD|PCECD|pcecd|true|mednafen_pce_fast_libretro.so|Mednafen PCE|pce,tg16,cue,chd,7z,zip|/media/sdcard/roms/PCECD/
 PC Engine|PCE|pce|true|mednafen_pce_fast_libretro.so|Mednafen PCE|pce,tg16,cue,7z,zip|/media/sdcard/roms/PCE/
 PokeMini|POKEMINI|pokemini|true|pokemini_libretro.so||min,zip,7z|/media/sdcard/roms/POKEMINI/
@@ -42,4 +42,4 @@ SEGA MS|SMS_gearsys|sms|true|gearsystem_libretro.so|Gearsystem|sms,bin,rom,zip,7
 Watara Supervision|SUPERVISION|supervision|true|potator_libretro.so|Potator|sv,bin,7z,zip|/media/sdcard/roms/SUPERVISION/
 TIC-80|TIC80|tic80|true|tic80_libretro.so||tic,7z,zip|/media/sdcard/roms/TIC80/
 Phillips Videopac|VIDEOPAC|videopac|true|o2em_libretro.so|O2em|bin,7z,zip|/media/sdcard/roms/VIDEOPAC/
-WonderSwan|WS|ws|true|mednafen_wswan_libretro.so|Mednafen Wswan|ws,wsc,zip,7z|/media/sdcard/roms/WSC/
+WonderSwan|WS|ws|true|mednafen_wswan_libretro.so|Mednafen Wswan|ws,wsc,pc2,zip,7z|/media/sdcard/roms/WSC/
