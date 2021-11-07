@@ -3,6 +3,7 @@ SEGA 32X|32X_Picodrive|32x|true|picodrive_libretro.so|Picodrive|zip,32x,7z|/medi
 Atari 2600|A2600|a2600|true|stella2014_libretro.so|Stella|bin,a26,7z,zip|/media/sdcard/roms/A2600/
 Atari 7800|A7800|a7800|true|prosystem_libretro.so|ProSystem|bin,a78,7z,zip|/media/sdcard/roms/A7800/
 Commodore 64|C64|c64|true|vice_x64_libretro.so|Vice|crt,d64,t64,bin,7z,zip|/media/sdcard/roms/C64/
+ColecoVision|COLECO|coleco|true|gearcoleco_libretro.so|Gearcoleco|col,cv,bin,rom,7z,zip|/media/sdcard/roms/COLECO/
 CPS1|CPS1|cps|true|fbalpha2012_cps1_libretro.so|FBA|zip,7z|/media/sdcard/roms/CPS/
 CPS2|CPS2|cps|true|fbalpha2012_cps2_libretro.so|FBA|zip,7z|/media/sdcard/roms/CPS/
 DosBox|DOSBOX|dosbox|true|dosbox_pure_libretro.so|DosBox Pure|zip,dosz,exe,com,bat,iso,cue,ins,img,ima,vhd,m3u,m3u8,7z|/media/sdcard/roms/DOSBOX/

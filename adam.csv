@@ -9,6 +9,7 @@ Amstrad CPC|CPC|cpc|true|cap32_libretro.so|Cap32|dsk,sna,tap,cdt,voc,cpr,m3u,zip
 MAME2003|MAME2003|mame2003|true|mame2003_libretro.so||zip,7z|/media/sdcard/roms/ARCADE/
 MAME2003|MAME2003_PLUS|mame2003+|true|mame2003_plus_libretro.so||zip,7z|/media/sdcard/roms/ARCADE/
 Commodore 64|C64|c64|true|vice_x64_libretro.so|Vice|crt,d64,t64,bin,7z,zip|/media/sdcard/roms/C64/
+ColecoVision|COLECO|coleco|true|gearcoleco_libretro.so|Gearcoleco|col,cv,bin,rom,7z,zip|/media/sdcard/roms/COLECO/
 CPS1|CPS1|cps|true|fbalpha2012_cps1_libretro.so|FBA|zip,7z|/media/sdcard/roms/CPS/
 CPS2|CPS2|cps|true|fbalpha2012_cps2_libretro.so|FBA|zip,7z|/media/sdcard/roms/CPS/
 Doom|PRBOOM|doom|true|prboom_libretro.so|PrBoom|wad,zip,7z|/media/sdcard/roms/DOOM/
