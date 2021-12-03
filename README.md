@@ -103,7 +103,7 @@ The script is designed to be used on Linux with bash. The procedure to use it is
 2. Download repository with submodules (**IMPORTANT** don't forget the `--recurse-submodules` option):
 
     ```bash
-    $ git clone --recurse-submodules https://github.com/eduardofilo/RG350_ra_installer.git
+    $ git clone --recurse-submodules https://github.com/eduardofilo/RG350_auto_ra_installer.git
     ```
 
 3. Create the CSV file with the parameterization that we like. We can use as template one of the two files included as an example in the repository (`official.csv` and `poligraf.csv`). It is important to bear in mind that the column separator is a pipe (|) and not a comma (,) as usual in this kind of files.
