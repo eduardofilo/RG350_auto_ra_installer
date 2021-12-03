@@ -103,7 +103,7 @@ El script se ha diseñado para ser utilizado en Linux sobre bash. El procedimien
 2. Descargar el repositorio y los submódulos  (**IMPORTANTE** no olvidar la opción `--recurse-submodules`):
 
     ```bash
-    $ git clone --recurse-submodules https://github.com/eduardofilo/RG350_ra_installer.git
+    $ git clone --recurse-submodules https://github.com/eduardofilo/RG350_auto_ra_installer.git
     ```
 
 3. Crear el fichero CSV con la parametrización que nos interese. Nos podemos basar en los dos ficheros incluidos como ejemplo en el repositorio (`official.csv` y `poligraf.csv`). Es importante tener en cuenta que el separador de columnas es una pila (|) y no una coma (,) como habitualmente en este tipo de ficheros.
