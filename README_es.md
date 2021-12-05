@@ -112,7 +112,7 @@ El script se ha diseñado para ser utilizado en Linux sobre bash. El procedimien
 6. Ejecutar el script:
 
     ```bash
-    $ cd RG350_ra_installer
+    $ cd RG350_auto_ra_installer
     $ ./build.sh
     ```
 
