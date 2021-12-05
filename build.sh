@@ -115,6 +115,7 @@ Exec=update_st.sh
 Icon=icon
 Categories=applications;
 Terminal=true
+StartupNotify=true
 EOF
     FLIST="${DIRECTORY}/files_st"
     FLIST="${FLIST} ${DIRECTORY}/icon.png"
@@ -220,6 +221,7 @@ Exec=update_odb.sh
 Icon=icon
 Categories=applications;
 Terminal=true
+StartupNotify=true
 EOF
     FLIST="${DIRECTORY}/files_odb"
     FLIST="${FLIST} ${DIRECTORY}/icon.png"
