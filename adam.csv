@@ -37,6 +37,10 @@ PC Engine|PCE|pce|true|mednafen_pce_fast_libretro.so|Mednafen PCE|pce,tg16,cue,7
 PokeMini|POKEMINI|pokemini|true|pokemini_libretro.so||min,zip,7z|/media/sdcard/roms/POKEMINI/
 PlayStation|PS|psx|true|pcsx_rearmed_libretro.so|PCSX ReARMed|bin,cue,img,mdf,pbp,toc,cbn,m3u,ccd,chd,7z|/media/sdcard/roms/PS/
 Quake|QUAKE|quake|true|tyrquake_libretro.so|TyrQuake|pak,zip,7z|/media/sdcard/roms/QUAKE/
+Quake2|QUAKE2|quake2|true|vitaquake2_libretro.so|VitaQuake 2|pak|/media/sdcard/roms/QUAKE2/baseq2/
+Quake2 Ground Zero|QUAKE2_rogue|quake2|true|vitaquake2-rogue_libretro.so|VitaQuake 2 [Rogue]|pak|/media/sdcard/roms/QUAKE2/rogue/
+Quake2 The Reckoning|QUAKE2_xatrix|quake2|true|vitaquake2-xatrix_libretro.so|VitaQuake 2 [Xatrix]|pak|/media/sdcard/roms/QUAKE2/xatrix/
+Quake2 Zaero|QUAKE2_zaero|quake2|true|vitaquake2-zaero_libretro.so|VitaQuake 2 [Zaero]|pak|/media/sdcard/roms/QUAKE2/zaero/
 ScummVM|SCUMMVM|scummvm|true|scummvm_libretro.so|||/media/sdcard/roms/SCUMMVM/
 SEGA CD|SEGACD|segacd|true|genesis_plus_gx_libretro.so|Genesis Plus|bin,chd,7z,zip|/media/sdcard/roms/SEGACD/
 SEGA CD|SEGACD_Pic|segacd|true|picodrive_libretro.so|Picodrive|bin,chd,7z,zip|/media/sdcard/roms/SEGACD/
