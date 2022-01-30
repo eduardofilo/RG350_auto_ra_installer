@@ -37,10 +37,11 @@ if [ ${BUILD_STOCK} = true ] ; then
     echo "    Building RA core pack"
     mv ${DIRECTORY}/build_st/retroarch/bin/retroarch_rg350 files_st/
     mv ${DIRECTORY}/build_st/retroarch/retroarch_rg350.opk files_st/
+    cp -r ${DIRECTORY}/build_st/retroarch/.retroarch/cores ${DIRECTORY}/build_st/cores
     mkdir -p ${DIRECTORY}/build_st/retroarch/.retroarch/cores
     cp ${DIRECTORY}/opendingux_ra_cores_unofficial/"stock or rogue"/*.so ${DIRECTORY}/build_st/retroarch/.retroarch/cores/
+    cp ${DIRECTORY}/build_st/cores/*.so ${DIRECTORY}/build_st/retroarch/.retroarch/cores/
     tar -czf ${DIRECTORY}/files_st/retroarch.tgz -C ${DIRECTORY}/build_st/retroarch/.retroarch assets core_info cores database filters system
-    rm -rf ${DIRECTORY}/build_st/retroarch
 
     echo "    Building OPK wrappers"
     if [ -d ${DIRECTORY}/files_st/apps_ra ] ; then
@@ -56,21 +57,22 @@ if [ ${BUILD_STOCK} = true ] ; then
         IFS='|' read -r -a array <<< "${row}"
         num_el=${#array[@]}
         [ ${num_el} -lt 5 ] && echo "@@ ERROR: Problem with CSV format" && exit 1
-        if [ ! -f ${DIRECTORY}/icons/"${array[2]}.png" ] ; then
-            cp ${DIRECTORY}/icons/unknown.png ${DIRECTORY}/files_st/apps_ra/squashfs-root/"${array[2]}.png"
-        else
-            cp ${DIRECTORY}/icons/"${array[2]}.png" ${DIRECTORY}/files_st/apps_ra/squashfs-root/
-        fi
-        [ "${array[3]}" = true ] && browse=" \"\$1\"" || browse=""
-        [ "${array[5]}" = "" ] && core_desc="" || core_desc=" with ${array[5]} core"
-        cat > ${DIRECTORY}/files_st/apps_ra/squashfs-root/exec.sh <<EOF
+        if [ -f ${DIRECTORY}/build_st/retroarch/.retroarch/cores/${array[4]} ] ; then
+            if [ ! -f ${DIRECTORY}/icons/"${array[2]}.png" ] ; then
+                cp ${DIRECTORY}/icons/unknown.png ${DIRECTORY}/files_st/apps_ra/squashfs-root/"${array[2]}.png"
+            else
+                cp ${DIRECTORY}/icons/"${array[2]}.png" ${DIRECTORY}/files_st/apps_ra/squashfs-root/
+            fi
+            [ "${array[3]}" = true ] && browse=" \"\$1\"" || browse=""
+            [ "${array[5]}" = "" ] && core_desc="" || core_desc=" with ${array[5]} core"
+            cat > ${DIRECTORY}/files_st/apps_ra/squashfs-root/exec.sh <<EOF
 #!/bin/sh
 /media/data/local/bin/retroarch_rg350 -v -L /media/data/local/home/.retroarch/cores/${array[4]} --config /media/data/local/home/.retroarch/retroarch.cfg${browse}
 exit 0
 EOF
-        chmod +x ${DIRECTORY}/files_st/apps_ra/squashfs-root/exec.sh
-        [ "${array[3]}" = "true" ] && browse=" %f" || browse=""
-        cat > ${DIRECTORY}/files_st/apps_ra/squashfs-root/default.gcw0.desktop <<EOF
+            chmod +x ${DIRECTORY}/files_st/apps_ra/squashfs-root/exec.sh
+            [ "${array[3]}" = "true" ] && browse=" %f" || browse=""
+            cat > ${DIRECTORY}/files_st/apps_ra/squashfs-root/default.gcw0.desktop <<EOF
 [Desktop Entry]
 Name=${array[0]}
 Comment=${array[0]} on RA${core_desc}
@@ -82,17 +84,18 @@ Icon=${array[2]}
 Categories=retroarch;
 X-OD-NeedsDownscaling=true
 EOF
-        mksquashfs ${DIRECTORY}/files_st/apps_ra/squashfs-root ${DIRECTORY}/files_st/apps_ra/retroarch_rg350_${array[1]}.opk -all-root -no-xattrs -noappend -no-exports > /dev/null
-        rm ${DIRECTORY}/files_st/apps_ra/squashfs-root/*
-        [ "${array[3]}" = "true" ] && browse="f" || browse=""
-        cat > ${DIRECTORY}/files_st/links/retroarch_rg350_${array[1]}_exec.sh${browse} <<EOF
+            mksquashfs ${DIRECTORY}/files_st/apps_ra/squashfs-root ${DIRECTORY}/files_st/apps_ra/retroarch_rg350_${array[1]}.opk -all-root -no-xattrs -noappend -no-exports > /dev/null
+            rm ${DIRECTORY}/files_st/apps_ra/squashfs-root/*
+            [ "${array[3]}" = "true" ] && browse="f" || browse=""
+            cat > ${DIRECTORY}/files_st/links/retroarch_rg350_${array[1]}_exec.sh${browse} <<EOF
 title=${array[0]}
 description=${array[0]} on RA${core_desc}
 icon=/media/data/apps/retroarch_rg350_${array[1]}.opk#${array[2]}.png
 clock=1080
 EOF
-        [ ! "${array[6]}" = "" ] && echo "selectorfilter=${array[6]}" >> ${DIRECTORY}/files_st/links/retroarch_rg350_${array[1]}_exec.sh${browse}
-        [ ! "${array[7]}" = "" ] && echo "selectordir=${array[7]}" >> ${DIRECTORY}/files_st/links/retroarch_rg350_${array[1]}_exec.sh${browse}
+            [ ! "${array[6]}" = "" ] && echo "selectorfilter=${array[6]}" >> ${DIRECTORY}/files_st/links/retroarch_rg350_${array[1]}_exec.sh${browse}
+            [ ! "${array[7]}" = "" ] && echo "selectordir=${array[7]}" >> ${DIRECTORY}/files_st/links/retroarch_rg350_${array[1]}_exec.sh${browse}
+        fi
     done
     rm -rf ${DIRECTORY}/files_st/apps_ra/squashfs-root
     cd ${DIRECTORY}/files_st/apps_ra
@@ -129,6 +132,9 @@ EOF
 
     mksquashfs ${FLIST} ${DIRECTORY}/releases/${OPK_NAME_ST} -all-root -no-xattrs -noappend -no-exports > /dev/null
     rm -f ${DIRECTORY}/default.gcw0.desktop
+    rm -rf ${DIRECTORY}/build_st/retroarch
+    rm -rf ${DIRECTORY}/build_st/cores
+
 fi
 
 
@@ -154,11 +160,12 @@ if [ ${BUILD_ODBETA} = true ] ; then
     echo "    Building RA core pack"
     mv ${DIRECTORY}/build_odb/retroarch/bin/retroarch_rg350_odbeta files_odb/
     mv ${DIRECTORY}/build_odb/retroarch/retroarch_rg350_odbeta.opk files_odb/
+    cp -r ${DIRECTORY}/build_odb/retroarch/.retroarch/cores ${DIRECTORY}/build_odb/cores
     mkdir -p ${DIRECTORY}/build_odb/retroarch/.retroarch/cores
     cp ${DIRECTORY}/opendingux_ra_cores_unofficial/"stock or rogue"/*.so ${DIRECTORY}/build_odb/retroarch/.retroarch/cores/
     cp ${DIRECTORY}/opendingux_ra_cores_unofficial/beta/*.so ${DIRECTORY}/build_odb/retroarch/.retroarch/cores/
+    cp ${DIRECTORY}/build_odb/cores/*.so ${DIRECTORY}/build_odb/retroarch/.retroarch/cores/
     tar -czf ${DIRECTORY}/files_odb/retroarch.tgz -C ${DIRECTORY}/build_odb/retroarch/.retroarch assets core_info cores database filters system
-    rm -rf ${DIRECTORY}/build_odb/retroarch
 
     echo "    Building OPK wrappers"
     if [ -d ${DIRECTORY}/files_odb/apps_ra ] ; then
@@ -174,14 +181,15 @@ if [ ${BUILD_ODBETA} = true ] ; then
         IFS='|' read -r -a array <<< "${row}"
         num_el=${#array[@]}
         [ ${num_el} -lt 5 ] && echo "@@ ERROR: Problem with CSV format" && exit 1
-        if [ ! -f ${DIRECTORY}/icons/"${array[2]}.png" ] ; then
-            cp ${DIRECTORY}/icons/unknown.png ${DIRECTORY}/files_odb/apps_ra/squashfs-root/"${array[2]}.png"
-        else
-            cp ${DIRECTORY}/icons/"${array[2]}.png" ${DIRECTORY}/files_odb/apps_ra/squashfs-root/
-        fi
-        [ "${array[5]}" = "" ] && core_desc="" || core_desc=" with ${array[5]} core"
-        [ "${array[3]}" = "true" ] && browse=" %f" || browse=""
-        cat > ${DIRECTORY}/files_odb/apps_ra/squashfs-root/default.gcw0.desktop <<EOF
+        if [ -f ${DIRECTORY}/build_odb/retroarch/.retroarch/cores/${array[4]} ] ; then
+            if [ ! -f ${DIRECTORY}/icons/"${array[2]}.png" ] ; then
+                cp ${DIRECTORY}/icons/unknown.png ${DIRECTORY}/files_odb/apps_ra/squashfs-root/"${array[2]}.png"
+            else
+                cp ${DIRECTORY}/icons/"${array[2]}.png" ${DIRECTORY}/files_odb/apps_ra/squashfs-root/
+            fi
+            [ "${array[5]}" = "" ] && core_desc="" || core_desc=" with ${array[5]} core"
+            [ "${array[3]}" = "true" ] && browse=" %f" || browse=""
+            cat > ${DIRECTORY}/files_odb/apps_ra/squashfs-root/default.gcw0.desktop <<EOF
 [Desktop Entry]
 Name=${array[0]}
 Comment=${array[0]} on RA${core_desc}
@@ -193,12 +201,13 @@ Icon=${array[2]}
 Categories=retroarch;
 X-OD-NeedsDownscaling=true
 EOF
-        mksquashfs ${DIRECTORY}/files_odb/apps_ra/squashfs-root ${DIRECTORY}/files_odb/apps_ra/retroarch_rg350_${array[1]}.opk -all-root -no-xattrs -noappend -no-exports > /dev/null
-        rm ${DIRECTORY}/files_odb/apps_ra/squashfs-root/*
-        cat > ${DIRECTORY}/files_odb/links/retroarch_rg350_${array[1]} <<EOF
+            mksquashfs ${DIRECTORY}/files_odb/apps_ra/squashfs-root ${DIRECTORY}/files_odb/apps_ra/retroarch_rg350_${array[1]}.opk -all-root -no-xattrs -noappend -no-exports > /dev/null
+            rm ${DIRECTORY}/files_odb/apps_ra/squashfs-root/*
+            cat > ${DIRECTORY}/files_odb/links/retroarch_rg350_${array[1]} <<EOF
 clock=996
 EOF
-        [ ! "${array[7]}" = "" ] && echo "selectordir=${array[7]}" >> ${DIRECTORY}/files_odb/links/retroarch_rg350_${array[1]}
+            [ ! "${array[7]}" = "" ] && echo "selectordir=${array[7]}" >> ${DIRECTORY}/files_odb/links/retroarch_rg350_${array[1]}
+        fi
     done
     rm -rf ${DIRECTORY}/files_odb/apps_ra/squashfs-root
     cd ${DIRECTORY}/files_odb/apps_ra
@@ -235,6 +244,8 @@ EOF
 
     mksquashfs ${FLIST} ${DIRECTORY}/releases/${OPK_NAME_ODB} -all-root -no-xattrs -noappend -no-exports > /dev/null
     rm -f ${DIRECTORY}/default.gcw0.desktop
+    rm -rf ${DIRECTORY}/build_odb/retroarch
+    rm -rf ${DIRECTORY}/build_odb/cores
 fi
 
 exit 0

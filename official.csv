@@ -3,6 +3,8 @@ SEGA 32X|32X_Picodrive|32x|true|picodrive_libretro.so|Picodrive|zip,32x,7z|/medi
 Atari 2600|A2600|a2600|true|stella2014_libretro.so|Stella|bin,a26,7z,zip|/media/sdcard/roms/A2600/
 Atari 5200|A5200|a5200|true|a5200_libretro.so|Atari800|bin,a52,zip,7z|/media/sdcard/roms/A5200/
 Atari 7800|A7800|a7800|true|prosystem_libretro.so|ProSystem|bin,a78,7z,zip|/media/sdcard/roms/A7800/
+BK-0011|BK0011|bk0011|true|bk_libretro.so||bin,zip,7z|/media/sdcard/roms/BK0011/
+ChannelF|CHANNELF|channelf|true|freechaf_libretro.so|FreeChaf|bin,chf,zip,7z|/media/sdcard/roms/CHANNELF/
 CHIP-8|CHIP-8|chip8|true|jaxe_libretro.so|JAXE|ch8,sc8,xo8,zip,7z|/media/sdcard/roms/CHIP8/
 Commodore 64|C64|c64|true|vice_x64_libretro.so|Vice|crt,d64,t64,bin,7z,zip|/media/sdcard/roms/C64/
 ColecoVision|COLECO|coleco|true|gearcoleco_libretro.so|Gearcoleco|col,cv,bin,rom,7z,zip|/media/sdcard/roms/COLECO/
