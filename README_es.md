@@ -10,11 +10,14 @@ A continuación se muestra la lista completa de cores que se incluyen en el inst
 
 |Fuente|Core|Sistemas|Necesita ficheros|Extensiones soportadas|Observaciones|
 |:-----|:---|:-------|:----------------|:---------------------|:------------|
+|Oficial|a5200_libretro.so|Atari 5200|true|bin, a52|Necesita BIOS: `5200.rom` (md5: `281f20ea4320404ec820fb7ec0693b38`)|
+|Oficial|bk_libretro.so|Elektronika - BK-0010/BK-0011|true|bin|Necesita BIOS (model `BK-0010`): `bk/BASIC10.ROM` (md5: `3fa774326d75410a065659aea80252f0`), `bk/FOCAL10.ROM` (md5: `5737f972e8638831ab71e9139abae052`), `bk/MONIT10.ROM` (md5: `95f8c41c6abf7640e35a6a03cecebd01`). Unsupported video mode en stock/ROGUE.|
 |Oficial|dosbox_pure_libretro.so|DOSBox|true|zip, dosz, exe, com, bat, iso, cue, ins, img, ima, vhd, m3u, m3u8| |
 |Oficial|fbalpha2012_cps1_libretro.so|CPS1|true|zip| |
 |Oficial|fbalpha2012_cps2_libretro.so|CPS2|true|zip| |
 |Oficial|fbalpha2012_neogeo_libretro.so|Neo Geo|true|zip| |
 |Oficial|fceumm_libretro.so|Nintendo NES|true|fds, nes, unif, unf|Disk System necesita BIOS: `disksys.rom` (md5: `ca30b50f880eb660a320674ed365ef7a`)|
+|Oficial|freechaf_libretro.so|Fairchild ChannelF|true|bin, chf|Necesita BIOS: `sl31253.bin` (md5: `ac9804d4c0e9d07e33472e3726ed15c3`), `sl31254.bin` (md5: `da98f4bb3242ab80d76629021bb27585`), `sl90025.bin` (md5: `95d339631d867c8f1d15a5f2ec26069d`)|
 |Oficial|gambatte_libretro.so|GB/GBC|true|gb, gbc, dmg|BIOS opcional: `gb_bios.bin` (md5: `32fbbd84168d3482956eb3c5051637f5`), `gbc_bios.bin` (md5: `dbfce9db9deaa2567f6a84fde55f9680`)|
 |Oficial|gearboy_libretro.so|GB/GBC|true|gb, dmg, gbc, cgb, sgb| |
 |Oficial|gearsystem_libretro.so|SG-1000, GG, MD|true|sms, gg, sg, bin, rom| |
@@ -22,11 +25,13 @@ A continuación se muestra la lista completa de cores que se incluyen en el inst
 |Oficial|genesis_plus_gx_wide_libretro.so|SG-1000, MS, GG, MD, SEGA CD|true|mdx, md, smd, gen, bin, cue, iso, sms, bms, gg, sg, 68k, chd, m3u|SEGA CD necesita BIOS: `bios_CD_E.bin`, `bios_CD_U.bin`, `bios_CD_J.bin`|
 |Oficial|gpsp_libretro.so|GBA|true|gba, bin|BIOS opcional: `gba_bios.bin` (md5: `a860e8c0b6d573d191e4ec7db1b1e4f6`)|
 |Oficial|handy_libretro.so|LYNX|true|lnx, o|Necesita BIOS: `lynxboot.img` (md5: `fcd403db69f54290b51035d82f835e7b`)|
+|Oficial|jaxe_libretro.so|CHIP-8|true|ch8, sc8, xo8| |
 |Oficial|mame2003_libretro.so|MAME2003|true|zip| |
 |Oficial|mame2003_plus_libretro.so|MAME2003|true|zip| |
 |Oficial|mednafen_pce_fast_libretro.so|PCE, PCE CD|true|pce, cue, ccd, chd, toc, m3u|PCE CD necesita BIOS: `syscard3.pce` (md5: `38179df8f4ac870017db21ebcbf53114`)|
 |Oficial|mednafen_wswan_libretro.so|WS|true|ws, wsc, pc2| |
 |Oficial|mgba_libretro.so|GBA|true|gb, gbc, gba|BIOS opcional: `gba_bios.bin` (md5: `a860e8c0b6d573d191e4ec7db1b1e4f6`)|
+|Oficial|minivmac_libretro.so|MAC|true|?|Necesita BIOS: `vMac.ROM`|
 |Oficial|mrboom_libretro.so|MrBoom|false| | |
 |Oficial|o2em_libretro.so|Magnavox Odyssey2, Phillips Videopac+|true|bin|Necesita BIOS: `o2rom.bin` (md5: `562d5ebf9e030a40d6fabfc2f33139fd`)|
 |Oficial|picodrive_libretro.so|MS, MD, SEGA CD, SEGA 32X|true|bin, gen, smd, md, 32x, chd, cue, iso, sms, 68k, m3u|SEGA CD necesita BIOS: `bios_CD_U.bin` (md5: `2efd74e3232ff260e371b99f84024f7f`), `bios_CD_E.bin` (md5: `e66fa1dc5820d254611fdcdba0662372`), `bios_CD_J.bin` (md5: `278a9397d192149e84e820ac621a8edd`)|
@@ -43,17 +48,19 @@ A continuación se muestra la lista completa de cores que se incluyen en el inst
 |Oficial|tic80_libretro.so|TIC-80|true|tic| |
 |Oficial|tyrquake_libretro.so|QUAKE|true|pak|Necesita ficheros de juego|
 |Oficial|vice_x64_libretro.so|C64|true|d64, d71, d80, d81, d82, g64, g41, x64, t64, tap, prg, p00, crt, bin, zip, gz, d6z, d7z, d8z, g6z, g4z, x6z, cmd, m3u, vfl, vsf, nib, nbz, d2m, d4m| |
+|Oficial|vitaquake2_libretro.so|QUAKE2|true|pak|Necesita ficheros de juego|
+|Oficial|vitaquake2-rogue_libretro.so|QUAKE2 Ground Zero|true|pak|Necesita ficheros de juego|
+|Oficial|vitaquake2-xatrix_libretro.so|QUAKE2 The Reckoning|true|pak|Necesita ficheros de juego|
+|Oficial|vitaquake2-zaero_libretro.so|QUAKE2 Zaero|true|pak|Necesita ficheros de juego|
 |Poligraf|2048_libretro.so|[2048](https://en.wikipedia.org/wiki/2048_(video_game))|false| | |
 |Poligraf|81_libretro.so|Sinclair ZX81|true|p, tzx, t81| |
 |Poligraf|atari800_libretro.so|Atari 5200|true|xfd, atr, cdm, cas, bin, a52, zip, atx, car, com, xex|Necesita BIOS para emular Atari5200: `5200.rom` (md5: `281f20ea4320404ec820fb7ec0693b38`)|
-|Poligraf|bk_libretro.so|Elektronika - BK-0010/BK-0011|true|bin|Necesita BIOS (model `BK-0010`): `bk/BASIC10.ROM` (md5: `3fa774326d75410a065659aea80252f0`), `bk/FOCAL10.ROM` (md5: `5737f972e8638831ab71e9139abae052`), `bk/MONIT10.ROM` (md5: `95f8c41c6abf7640e35a6a03cecebd01`). Unsupported video mode en stock/ROGUE.|
 |Poligraf|bluemsx_libretro.so|MSX, MSX2|true|rom,ri,mx1,mx2,col,dsk,cas,sg,sc,m3u|Necesita BIOS en directorio `.retroarch/system/Machines`|
 |Poligraf|cannonball_libretro.so|SEGA Outrun|true|game, 88|Necesita ficheros de juego y un fichero dummy con la extensión `.game`|
 |Poligraf|cap32_libretro.so|Amstrad CPC|true|dsk, sna, zip, tap, cdt, voc, cpr, m3u| |
 |Poligraf|crocods_libretro.so|Amstrad CPC|true|dsk,sna,kcr| |
 |Poligraf|dinothawr_libretro.so|Dinothawr|true|game|Necesita [ficheros de juego](https://buildbot.libretro.com/assets/cores/Dinothawr/Dinothawr.zip)|
 |Poligraf|fmsx_libretro.so|MSX, MSX2|true|rom,mx1,mx2,dsk,cas|Necesita BIOS: `MSX.ROM` (md5: `364a1a579fe5cb8dba54519bcfcdac0d`), `MSX2.ROM` (md5: `ec3a01c91f24fbddcbcab0ad301bc9ef`), `MSX2EXT.ROM` (md5: `2183c2aff17cf4297bdb496de78c2e8a`), `MSX2P.ROM` (md5: `847cc025ffae665487940ff2639540e5`), `MSX2PEXT.ROM` (md5: `7c8243c71d8f143b2531f01afa6a05dc`). Unsupported video mode en RG280/ODBeta.|
-|Poligraf|freechaf_libretro.so|Fairchild ChannelF|true|bin, chf|Necesita BIOS: `sl31253.bin` (md5: `ac9804d4c0e9d07e33472e3726ed15c3`), `sl31254.bin` (md5: `da98f4bb3242ab80d76629021bb27585`), `sl90025.bin` (md5: `95d339631d867c8f1d15a5f2ec26069d`)|
 |Poligraf|frodo_libretro.so|Commodore 64|true|d64,t64,x64,p00,lnx,zip| |
 |Poligraf|fuse_libretro.so|Sinclair ZX Spectrum|true|tzx, tap, z80, rzx, scl, trd, dsk| |
 |Poligraf|gme_libretro.so|Game Music Emu|true|ay, gbs, gym, hes, kss, nsf, nsfe, sap, spc, vgm, vgz, zip| |
