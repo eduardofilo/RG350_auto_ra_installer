@@ -30,7 +30,7 @@ PC Engine CD|PCECD|pcecd|true|mednafen_pce_fast_libretro.so|Mednafen PCE|pce,tg1
 PC Engine|PCE|pce|true|mednafen_pce_fast_libretro.so|Mednafen PCE|pce,tg16,cue,7z,zip|/media/sdcard/roms/PCE/
 WonderSwan|WS|ws|true|mednafen_wswan_libretro.so|Mednafen Wswan|ws,wsc,pc2,zip,7z|/media/sdcard/roms/WSC/
 Nintendo GBA|GBA_mGBA|gba|true|mgba_libretro.so|mGBA|gba,zip,7z|/media/sdcard/roms/GBA/
-Apple Macintosh|MAC|mac|True|minivmac_libretro.so|MinivmacII|dsk,img,zip,hvf,cmd|/media/sdcard/roms/MAC/
+Apple Macintosh|MAC|mac|true|minivmac_libretro.so|MinivmacII|dsk,img,zip,hvf,cmd|/media/sdcard/roms/MAC/
 Mr.Boom|MrBoom|mrboom|false|mrboom_libretro.so|||
 Phillips Videopac|VIDEOPAC|videopac|true|o2em_libretro.so|O2em|bin,7z,zip|/media/sdcard/roms/VIDEOPAC/
 SEGA 32X|32X_Picodrive|32x|true|picodrive_libretro.so|Picodrive|zip,32x,7z|/media/sdcard/roms/32X/
@@ -54,3 +54,32 @@ Quake2|QUAKE2|quake2|true|vitaquake2_libretro.so|VitaQuake 2|pak|/media/sdcard/r
 Quake2 Ground Zero|QUAKE2_rogue|quake2|true|vitaquake2-rogue_libretro.so|VitaQuake 2 [Rogue]|pak|/media/sdcard/roms/QUAKE2/rogue/
 Quake2 The Reckoning|QUAKE2_xatrix|quake2|true|vitaquake2-xatrix_libretro.so|VitaQuake 2 [Xatrix]|pak|/media/sdcard/roms/QUAKE2/xatrix/
 Quake2 Zaero|QUAKE2_zaero|quake2|true|vitaquake2-zaero_libretro.so|VitaQuake 2 [Zaero]|pak|/media/sdcard/roms/QUAKE2/zaero/
+ZX81|ZX81|zx81|true|81_libretro.so||p,tzx,t81,zip,7z|/media/sdcard/roms/ZX81/
+2048|2048|2048|false|2048_libretro.so|||
+Atari 5200|A5200|a5200|true|atari800_libretro.so|Atari800|xfd,atr,cdm,cas,bin,a52,zip,atx,car,com,xex,7z|/media/sdcard/roms/A5200/
+MSX|MSX_Blue|msx|true|bluemsx_libretro.so|BlueMSX|rom,ri,mx1,mx2,col,dsk,cas,sg,sc,m3u,zip,7z|/media/sdcard/roms/MSX/
+Outrun|OUTRUN|outrun|true|cannonball_libretro.so|Cannonball|game,88,zip,7z|/media/sdcard/roms/OUTRUN/
+Amstrad CPC|CPC|cpc|true|cap32_libretro.so|Cap32|dsk,sna,tap,cdt,voc,cpr,m3u,zip,7z|/media/sdcard/roms/AMSTRAD/
+Amstrad CPC|CPC_Croco|cpc|true|crocods_libretro.so|CrocoDS|dsk,sna,kcr,zip,7z|/media/sdcard/roms/AMSTRAD/
+Dinothawr|DINOTHAWR|dinothawr|true|dinothawr_libretro.so||game|/media/sdcard/roms/DINOTHAWR/
+MSX|MSX_fMSX|msx|true|fmsx_libretro.so|fMSX|rom,mx1,mx2,dsk,cas,zip,7z|/media/sdcard/roms/MSX/
+Commodore 64|C64_Frodo|c64|true|frodo_libretro.so|Frodo|d64,t64,x64,p00,lnx,zip,7z|/media/sdcard/roms/C64/
+ZX Spectrum|ZX|zx|true|fuse_libretro.so|FUSE|tzx,tap,z80,rzx,scl,trd,dsk,zip,7z|/media/sdcard/roms/ZX/
+Game Music Emu|GME|gme|true|gme_libretro.so||ay,gbs,gym,hes,kss,nsf,nsfe,sap,spc,vgm,vgz,zip,7z|/media/sdcard/roms/GME/
+Nintendo G&W|GW|gw|true|gw_libretro.so||mgw,zip,7z|/media/sdcard/roms/GW/
+Atari ST|ATARIST|atarist|true|hatari_libretro.so|Hatari|st,msa,stx,dim,ipf,m3u,zip,7z|/media/sdcard/roms/ATARIST/
+LowRes NX|LOWRESNX|lowresnx|true|lowresnx_libretro.so||nx,zip,7z|/media/sdcard/roms/LOWRESNX/
+Nintendo Virtual Boy|VB|vb|true|mednafen_vb_libretro.so|Mednafen VB|vb,vboy,bin,zip,7z|/media/sdcard/roms/VB/
+Palm|PALM|palm|true|mu_libretro.so|Mu|prc,pqa,img,7z|/media/sdcard/roms/PALM/
+NEC PC-98|PC98|pc88|true|nekop2_libretro.so|Neko Project II|d98,zip,98d,fdi,fdd,2hd,tfd,d88,88d,hdm,xdf,dup,cmd,hdi,thd,nhd,hdd,zip,7z|/media/sdcard/roms/PC98/
+Cave Story|CAVESTORY|cavestory|true|nxengine_libretro.so|NXengine|exe,zip,7z|/media/sdcard/roms/CAVESTORY/
+PlayStation|PS|psx|true|pcsx_rearmed_libretro.so|PCSX ReARMed|bin,cue,img,mdf,pbp,toc,cbn,m3u,ccd,chd,7z|/media/sdcard/roms/PS/
+PocketCDG|CDG|cdg|true|pocketcdg_libretro.so||cdg,7z|/media/sdcard/roms/CDG/
+Commodore Amiga|AMIGA|amiga|true|puae_libretro.so|Puae|adf,adz,dms,fdi,ipf,hdf,hdz,lha,slave,info,cue,ccd,nrg,mds,iso,chd,uae,m3u,zip,7z,rp9|/media/sdcard/roms/AMIGA/
+NEC PC-88|PC88|pc88|true|quasi88_libretro.so|Quasi88|d88,u88,m3u,zip,7z|/media/sdcard/roms/PC88/
+Flashback|FLASHBACK|flashback|true|reminiscence_libretro.so|Reminiscence|map,aba,seq,lev,zip,7z|/media/sdcard/roms/FLASHBACK/
+Stone Soup|STONESOUP|stonesoup|true|stonesoup_libretro.so||crawlrc|/media/sdcard/roms/STONESOUP/
+Thomson MO-TO|MOTO|moto|true|theodore_libretro.so|Theodore|fd,sap,k7,m7,m5,rom,zip,7z|/media/sdcard/roms/MOTO/
+Uzebox|UZEBOX|uzebox|true|uzem_libretro.so||uze,zip,7z|/media/sdcard/roms/UZEBOX/
+Vectrex|VECTREX|vectrex|true|vecx_libretro.so|Vecx|bin,vec,zip,7z|/media/sdcard/roms/VECTREX/
+Sharp X1|X1|x1|true|x1_libretro.so||dx1,zip,2d,2hd,tfd,d88,88d,hdm,xdf,dup,tap,cmd,7z|/media/sdcard/roms/X1/

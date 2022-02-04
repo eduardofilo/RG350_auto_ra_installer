@@ -13,6 +13,7 @@ Below is the full list of cores that are included in the final generated OPK ins
 |Official|a5200_libretro.so|Atari 5200|true|bin, a52|Needs BIOS: `5200.rom` (md5: `281f20ea4320404ec820fb7ec0693b38`)|
 |Official|bk_libretro.so|Elektronika - BK-0010/BK-0011|true|bin|Needs BIOS (model `BK-0010`): `bk/BASIC10.ROM` (md5: `3fa774326d75410a065659aea80252f0`), `bk/FOCAL10.ROM` (md5: `5737f972e8638831ab71e9139abae052`), `bk/MONIT10.ROM` (md5: `95f8c41c6abf7640e35a6a03cecebd01`). Unsupported video mode on stock/ROGUE.|
 |Official|dosbox_pure_libretro.so|DOSBox|true|zip, dosz, exe, com, bat, iso, cue, ins, img, ima, vhd, m3u, m3u8| |
+|Official (only ODbeta)|ecwolf_libretro.so|Wolfenstein 3D|true|wl6,n3d,sod,sdm,wl1,pk3,exe|Needs "BIOS": `ecwolf.pk3` (md5: `d68107770b3ba230d10aa27472a7617b`)|
 |Official|fbalpha2012_cps1_libretro.so|CPS1|true|zip| |
 |Official|fbalpha2012_cps2_libretro.so|CPS2|true|zip| |
 |Official|fbalpha2012_neogeo_libretro.so|Neo Geo|true|zip| |
@@ -20,6 +21,7 @@ Below is the full list of cores that are included in the final generated OPK ins
 |Official|freechaf_libretro.so|Fairchild ChannelF|true|bin, chf|Needs BIOS: `sl31253.bin` (md5: `ac9804d4c0e9d07e33472e3726ed15c3`), `sl31254.bin` (md5: `da98f4bb3242ab80d76629021bb27585`), `sl90025.bin` (md5: `95d339631d867c8f1d15a5f2ec26069d`)|
 |Official|gambatte_libretro.so|GB/GBC|true|gb, gbc, dmg|BIOS optional: `gb_bios.bin` (md5: `32fbbd84168d3482956eb3c5051637f5`), `gbc_bios.bin` (md5: `dbfce9db9deaa2567f6a84fde55f9680`)|
 |Official|gearboy_libretro.so|GB/GBC|true|gb, dmg, gbc, cgb, sgb| |
+|Official|gearcoleco_libretro.so|ColecoVision|true|col,cv,bin,rom|Needs BIOS: `colecovision.rom` (md5: `2c66f5911e5b42b8ebe113403548eee7`)|
 |Official|gearsystem_libretro.so|SG-1000, GG, MD|true|sms, gg, sg, bin, rom| |
 |Official|genesis_plus_gx_libretro.so|SG-1000, MS, GG, MD, SEGA CD|true|mdx, md, smd, gen, bin, cue, iso, sms, bms, gg, sg, 68k, chd, m3u|SEGA CD needs BIOS: `bios_CD_E.bin`, `bios_CD_U.bin`, `bios_CD_J.bin`|
 |Official|genesis_plus_gx_wide_libretro.so|SG-1000, MS, GG, MD, SEGA CD|true|mdx, md, smd, gen, bin, cue, iso, sms, bms, gg, sg, 68k, chd, m3u|SEGA CD needs BIOS: `bios_CD_E.bin`, `bios_CD_U.bin`, `bios_CD_J.bin`|
@@ -31,6 +33,7 @@ Below is the full list of cores that are included in the final generated OPK ins
 |Official|mednafen_pce_fast_libretro.so|PCE, PCE CD|true|pce, cue, ccd, chd, toc, m3u|PCE CD needs BIOS: `syscard3.pce` (md5: `38179df8f4ac870017db21ebcbf53114`)|
 |Official|mednafen_wswan_libretro.so|WS|true|ws, wsc, pc2| |
 |Official|mgba_libretro.so|GBA|true|gb, gbc, gba|BIOS optional: `gba_bios.bin` (md5: `a860e8c0b6d573d191e4ec7db1b1e4f6`)|
+|Official|minivmac_libretro.so|MAC|true|dsk,img,zip,hvf,cmd|Needs BIOS: `MacII.ROM` (md5: `66223be1497460f1e60885eeb35e03cc`)|
 |Official|minivmac_libretro.so|MAC|true|?|Needs BIOS: `vMac.ROM`|
 |Official|mrboom_libretro.so|MrBoom|false| | |
 |Official|o2em_libretro.so|Magnavox Odyssey2, Phillips Videopac+|true|bin|Needs BIOS: `o2rom.bin` (md5: `562d5ebf9e030a40d6fabfc2f33139fd`)|

@@ -5,14 +5,14 @@ set -e
 # BEGIN PARAMETER ZONE
 BUILD_STOCK=true        # Build Stock version of installer
 BUILD_ODBETA=true       # Build ODBeta version of installer
-CONF_CSV=official       # Name of CSV with parameterization, without extension (official, poligraf, adam, tana)
+CONF_CSV=all            # Name of CSV with parameterization, without extension
 # END PARAMETER ZONE
 
 VERSION=`cat v`
 DIRECTORY=$(pwd)
 RA_DIST_FILE=${VERSION}_RetroArch.7z
-OPK_NAME_ST=RA_Stock_Installer_v${VERSION}_${CONF_CSV}.opk
-OPK_NAME_ODB=RA_ODBeta_Installer_v${VERSION}_${CONF_CSV}.opk
+OPK_NAME_ST=RA_Stock_Installer_v${VERSION}.opk
+OPK_NAME_ODB=RA_ODBeta_Installer_v${VERSION}.opk
 
 
 # Stock
@@ -95,6 +95,8 @@ clock=1080
 EOF
             [ ! "${array[6]}" = "" ] && echo "selectorfilter=${array[6]}" >> ${DIRECTORY}/files_st/links/retroarch_rg350_${array[1]}_exec.sh${browse}
             [ ! "${array[7]}" = "" ] && echo "selectordir=${array[7]}" >> ${DIRECTORY}/files_st/links/retroarch_rg350_${array[1]}_exec.sh${browse}
+        else
+            echo "    @@ ERROR: Core ${array[4]} not found"
         fi
     done
     rm -rf ${DIRECTORY}/files_st/apps_ra/squashfs-root
@@ -207,6 +209,8 @@ EOF
 clock=996
 EOF
             [ ! "${array[7]}" = "" ] && echo "selectordir=${array[7]}" >> ${DIRECTORY}/files_odb/links/retroarch_rg350_${array[1]}
+        else
+            echo "    @@ ERROR: Core ${array[4]} not found"
         fi
     done
     rm -rf ${DIRECTORY}/files_odb/apps_ra/squashfs-root
