@@ -96,7 +96,7 @@ EOF
             [ ! "${array[6]}" = "" ] && echo "selectorfilter=${array[6]}" >> ${DIRECTORY}/files_st/links/retroarch_rg350_${array[1]}_exec.sh${browse}
             [ ! "${array[7]}" = "" ] && echo "selectordir=${array[7]}" >> ${DIRECTORY}/files_st/links/retroarch_rg350_${array[1]}_exec.sh${browse}
         else
-            echo "    @@ ERROR: Core ${array[4]} not found"
+            echo "    @@ NOTE: Core ${array[4]} not found"
         fi
     done
     rm -rf ${DIRECTORY}/files_st/apps_ra/squashfs-root
@@ -210,7 +210,7 @@ clock=996
 EOF
             [ ! "${array[7]}" = "" ] && echo "selectordir=${array[7]}" >> ${DIRECTORY}/files_odb/links/retroarch_rg350_${array[1]}
         else
-            echo "    @@ ERROR: Core ${array[4]} not found"
+            echo "    @@ NOTE: Core ${array[4]} not found"
         fi
     done
     rm -rf ${DIRECTORY}/files_odb/apps_ra/squashfs-root
