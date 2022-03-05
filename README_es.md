@@ -11,9 +11,13 @@ A continuación se muestra la lista completa de cores que se incluyen en el inst
 |Fuente|Core|Sistemas|Necesita ficheros|Extensiones soportadas|Observaciones|
 |:-----|:---|:-------|:----------------|:---------------------|:------------|
 |Oficial|a5200_libretro.so|Atari 5200|true|bin, a52|Necesita BIOS: `5200.rom` (md5: `281f20ea4320404ec820fb7ec0693b38`)|
+|Oficial|arduous_libretro.so|Arduboy|true|hex|Sólo stock/ROGUE|
 |Oficial|bk_libretro.so|Elektronika - BK-0010/BK-0011|true|bin|Necesita BIOS (model `BK-0010`): `bk/BASIC10.ROM` (md5: `3fa774326d75410a065659aea80252f0`), `bk/FOCAL10.ROM` (md5: `5737f972e8638831ab71e9139abae052`), `bk/MONIT10.ROM` (md5: `95f8c41c6abf7640e35a6a03cecebd01`). Unsupported video mode en stock/ROGUE.|
+|Oficial|cannonball_libretro.so|SEGA Outrun|true|game, 88|Necesita ficheros de juego y un fichero dummy con la extensión `.game`|
+|Oficial|chailove_libretro.so|ChaiLove|true|chai, chailove|[Framework](https://love2d.org/) para creación de juegos 2D en Lua. Sólo ODbeta|
+|Oficial|dinothawr_libretro.so|Dinothawr|true|game|Necesita [ficheros de juego](https://buildbot.libretro.com/assets/cores/Dinothawr/Dinothawr.zip)|
 |Oficial|dosbox_pure_libretro.so|DOSBox|true|zip, dosz, exe, com, bat, iso, cue, ins, img, ima, vhd, m3u, m3u8| |
-|Oficial (sólo ODbeta)|ecwolf_libretro.so|Wolfenstein 3D|true|wl6,n3d,sod,sdm,wl1,pk3,exe|Necesita "BIOS": `ecwolf.pk3` (md5: `d68107770b3ba230d10aa27472a7617b`)|
+|Oficial|ecwolf_libretro.so|Wolfenstein 3D|true|wl6,n3d,sod,sdm,wl1,pk3,exe|Necesita "BIOS": `ecwolf.pk3` (md5: `d68107770b3ba230d10aa27472a7617b`). Sólo ODbeta|
 |Oficial|fbalpha2012_cps1_libretro.so|CPS1|true|zip| |
 |Oficial|fbalpha2012_cps2_libretro.so|CPS2|true|zip| |
 |Oficial|fbalpha2012_neogeo_libretro.so|Neo Geo|true|zip| |
@@ -25,6 +29,7 @@ A continuación se muestra la lista completa de cores que se incluyen en el inst
 |Oficial|gearsystem_libretro.so|SG-1000, GG, MD|true|sms, gg, sg, bin, rom| |
 |Oficial|genesis_plus_gx_libretro.so|SG-1000, MS, GG, MD, SEGA CD|true|mdx, md, smd, gen, bin, cue, iso, sms, bms, gg, sg, 68k, chd, m3u|SEGA CD necesita BIOS: `bios_CD_E.bin`, `bios_CD_U.bin`, `bios_CD_J.bin`|
 |Oficial|genesis_plus_gx_wide_libretro.so|SG-1000, MS, GG, MD, SEGA CD|true|mdx, md, smd, gen, bin, cue, iso, sms, bms, gg, sg, 68k, chd, m3u|SEGA CD necesita BIOS: `bios_CD_E.bin`, `bios_CD_U.bin`, `bios_CD_J.bin`|
+|Oficial|gong_libretro.so|Pong|false| | |
 |Oficial|gpsp_libretro.so|GBA|true|gba, bin|BIOS opcional: `gba_bios.bin` (md5: `a860e8c0b6d573d191e4ec7db1b1e4f6`)|
 |Oficial|handy_libretro.so|LYNX|true|lnx, o|Necesita BIOS: `lynxboot.img` (md5: `fcd403db69f54290b51035d82f835e7b`)|
 |Oficial|jaxe_libretro.so|CHIP-8|true|ch8, sc8, xo8| |
@@ -35,6 +40,7 @@ A continuación se muestra la lista completa de cores que se incluyen en el inst
 |Oficial|mgba_libretro.so|GBA|true|gb, gbc, gba|BIOS opcional: `gba_bios.bin` (md5: `a860e8c0b6d573d191e4ec7db1b1e4f6`)|
 |Oficial|minivmac_libretro.so|MAC|true|dsk,img,zip,hvf,cmd|Necesita BIOS: `MacII.ROM` (md5: `66223be1497460f1e60885eeb35e03cc`)|
 |Oficial|mrboom_libretro.so|MrBoom|false| | |
+|Oficial|nxengine_libretro.so|Cave Story|true|exe|Necesita ficheros de juego|
 |Oficial|o2em_libretro.so|Magnavox Odyssey2, Phillips Videopac+|true|bin|Necesita BIOS: `o2rom.bin` (md5: `562d5ebf9e030a40d6fabfc2f33139fd`)|
 |Oficial|picodrive_libretro.so|MS, MD, SEGA CD, SEGA 32X|true|bin, gen, smd, md, 32x, chd, cue, iso, sms, 68k, m3u|SEGA CD necesita BIOS: `bios_CD_U.bin` (md5: `2efd74e3232ff260e371b99f84024f7f`), `bios_CD_E.bin` (md5: `e66fa1dc5820d254611fdcdba0662372`), `bios_CD_J.bin` (md5: `278a9397d192149e84e820ac621a8edd`)|
 |Oficial|pokemini_libretro.so|POKEMINI|true|min|Necesita BIOS: `bios.min` (md5: `1e4fb124a3a886865acb574f388c803d`)|
@@ -49,19 +55,20 @@ A continuación se muestra la lista completa de cores que se incluyen en el inst
 |Oficial|stella2014_libretro.so|Atari 2600|true|a26, bin| |
 |Oficial|tic80_libretro.so|TIC-80|true|tic| |
 |Oficial|tyrquake_libretro.so|QUAKE|true|pak|Necesita ficheros de juego|
+|Oficial|vaporspec_libretro.so|VaporSpec|true|vaporbin| |
 |Oficial|vice_x64_libretro.so|C64|true|d64, d71, d80, d81, d82, g64, g41, x64, t64, tap, prg, p00, crt, bin, zip, gz, d6z, d7z, d8z, g6z, g4z, x6z, cmd, m3u, vfl, vsf, nib, nbz, d2m, d4m| |
 |Oficial|vitaquake2_libretro.so|QUAKE2|true|pak|Necesita ficheros de juego|
 |Oficial|vitaquake2-rogue_libretro.so|QUAKE2 Ground Zero|true|pak|Necesita ficheros de juego|
 |Oficial|vitaquake2-xatrix_libretro.so|QUAKE2 The Reckoning|true|pak|Necesita ficheros de juego|
 |Oficial|vitaquake2-zaero_libretro.so|QUAKE2 Zaero|true|pak|Necesita ficheros de juego|
+|Oficial|wasm4_libretro.so|[WASM-4](https://wasm4.org/)|true|wasm|Sólo stock/ROGUE|
+|Oficial|xrick_libretro.so|Rick Dangerous|true|zip| |
 |Poligraf|2048_libretro.so|[2048](https://en.wikipedia.org/wiki/2048_(video_game))|false| | |
 |Poligraf|81_libretro.so|Sinclair ZX81|true|p, tzx, t81| |
 |Poligraf|atari800_libretro.so|Atari 5200|true|xfd, atr, cdm, cas, bin, a52, zip, atx, car, com, xex|Necesita BIOS para emular Atari5200: `5200.rom` (md5: `281f20ea4320404ec820fb7ec0693b38`)|
 |Poligraf|bluemsx_libretro.so|MSX, MSX2|true|rom,ri,mx1,mx2,col,dsk,cas,sg,sc,m3u|Necesita BIOS en directorio `.retroarch/system/Machines`|
-|Poligraf|cannonball_libretro.so|SEGA Outrun|true|game, 88|Necesita ficheros de juego y un fichero dummy con la extensión `.game`|
 |Poligraf|cap32_libretro.so|Amstrad CPC|true|dsk, sna, zip, tap, cdt, voc, cpr, m3u| |
 |Poligraf|crocods_libretro.so|Amstrad CPC|true|dsk,sna,kcr| |
-|Poligraf|dinothawr_libretro.so|Dinothawr|true|game|Necesita [ficheros de juego](https://buildbot.libretro.com/assets/cores/Dinothawr/Dinothawr.zip)|
 |Poligraf|fmsx_libretro.so|MSX, MSX2|true|rom,mx1,mx2,dsk,cas|Necesita BIOS: `MSX.ROM` (md5: `364a1a579fe5cb8dba54519bcfcdac0d`), `MSX2.ROM` (md5: `ec3a01c91f24fbddcbcab0ad301bc9ef`), `MSX2EXT.ROM` (md5: `2183c2aff17cf4297bdb496de78c2e8a`), `MSX2P.ROM` (md5: `847cc025ffae665487940ff2639540e5`), `MSX2PEXT.ROM` (md5: `7c8243c71d8f143b2531f01afa6a05dc`). Unsupported video mode en RG280/ODBeta.|
 |Poligraf|frodo_libretro.so|Commodore 64|true|d64,t64,x64,p00,lnx,zip| |
 |Poligraf|fuse_libretro.so|Sinclair ZX Spectrum|true|tzx, tap, z80, rzx, scl, trd, dsk| |
@@ -72,7 +79,6 @@ A continuación se muestra la lista completa de cores que se incluyen en el inst
 |Poligraf|mednafen_vb_libretro.so|Nintendo Virtual Boy|true|vb, vboy, bin|Rendimiento pobre|
 |Poligraf|mu_libretro.so|Palm|true|prc,pqa,img|Necesita BIOS: `palmos41-en-m515.rom` (md5: `83cb1d1c76e568b916dc2e7c0bf669f6`). Necesita un stick para manejar el stylus, por lo que no funciona sobre RG280V.|
 |Poligraf|nekop2_libretro.so|NEC PC-98|true|d98,zip,98d,fdi,fdd,2hd,tfd,d88,88d,hdm,xdf,dup,cmd,hdi,thd,nhd,hdd|No he conseguido hacerlo funcionar. Puede que [necesite algunas BIOS](https://docs.libretro.com/library/neko_project_ii_kai/#bios).|
-|Poligraf|nxengine_libretro.so|Cave Story|true|exe|Necesita ficheros de juego|
 |Poligraf|pcsx_rearmed_libretro.so|PlayStation|true|bin,cue,img,mdf,pbp,toc,cbn,m3u,ccd,chd|Rendimiento pobre|
 |Poligraf|[pocketcdg_libretro.so](https://docs.libretro.com/library/pocketcdg/)|PocketCDG|true|cdg| |
 |Poligraf|puae_libretro.so|Commodore Amiga|true|adf, adz, dms, fdi, ipf, hdf, hdz, lha, slave, info, cue, ccd, nrg, mds, iso, chd, uae, m3u, zip, 7z, rp9|Necesita BIOS: `kick34005.A500` (md5: `82a21c1890cae844b3df741f2762d48d`)|

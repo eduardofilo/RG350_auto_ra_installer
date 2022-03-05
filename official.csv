@@ -1,6 +1,10 @@
 OPK Wrapper Title|OPK Wrapper file name|Icon|Browse|Core|Core name|ROM extensions|ROM path
 Atari 5200|A5200|a5200|true|a5200_libretro.so|Atari800|bin,a52,zip,7z|/media/sdcard/roms/A5200/
+Arduboy|ARDUOUS|arduous|true|arduous_libretro.so||hex|/media/sdcard/roms/ARDUBOY/
 BK-0011|BK0011|bk0011|true|bk_libretro.so||bin,zip,7z|/media/sdcard/roms/BK0011/
+Outrun|OUTRUN|outrun|true|cannonball_libretro.so||game,88,zip,7z|/media/sdcard/roms/OUTRUN/
+ChaiLove|CHAILOVE|chailove|true|chailove_libretro.so||chai,chailove|/media/sdcard/roms/CHAILOVE/
+Dinothawr|DINOTHAWR|dinothawr|true|dinothawr_libretro.so||game|/media/sdcard/roms/DINOTHAWR/
 DosBox|DOSBOX|dosbox|true|dosbox_pure_libretro.so|DosBox Pure|zip,dosz,exe,com,bat,iso,cue,ins,img,ima,vhd,m3u,m3u8,7z|/media/sdcard/roms/DOSBOX/
 Wolfenstein 3D|WOLF3D|wolf3d|true|ecwolf_libretro.so|ECWolf|wl6,n3d,sod,sdm,wl1,pk3,exe|/media/sdcard/roms/WOLF3D/
 CPS1|CPS1|cps|true|fbalpha2012_cps1_libretro.so|FBA|zip,7z|/media/sdcard/roms/CPS/
@@ -21,6 +25,7 @@ SEGA MD|MD_Gen|md|true|genesis_plus_gx_libretro.so|Genesis Plus|zip,bin,smd,md,m
 SEGA CD|SEGACD|segacd|true|genesis_plus_gx_libretro.so|Genesis Plus|bin,chd,7z,zip|/media/sdcard/roms/SEGACD/
 SEGA SG-1000|SG1000|sg1000|true|genesis_plus_gx_libretro.so|Genesis Plus|zip,sg,7z|/media/sdcard/roms/SG1000/
 SEGA MS|SMS_Gen|sms|true|genesis_plus_gx_libretro.so|Genesis Plus|zip,sms,7z|/media/sdcard/roms/SMS/
+Gong|GONG|gong|false|gong_libretro.so|||
 Nintendo GBA|GBA_gpSP|gba|true|gpsp_libretro.so|gpSP|gba,zip,7z|/media/sdcard/roms/GBA/
 Atari Lynx|LYNX|atari_lynx|true|handy_libretro.so|Handy|zip,lnx,7z|/media/sdcard/roms/LYNX/
 CHIP-8|CHIP-8|chip8|true|jaxe_libretro.so|JAXE|ch8,sc8,xo8,zip,7z|/media/sdcard/roms/CHIP8/
@@ -32,6 +37,7 @@ WonderSwan|WS|ws|true|mednafen_wswan_libretro.so|Mednafen Wswan|ws,wsc,pc2,zip,7
 Nintendo GBA|GBA_mGBA|gba|true|mgba_libretro.so|mGBA|gba,zip,7z|/media/sdcard/roms/GBA/
 Apple Macintosh|MAC|mac|True|minivmac_libretro.so|MinivmacII|dsk,img,zip,hvf,cmd|/media/sdcard/roms/MAC/
 Mr.Boom|MrBoom|mrboom|false|mrboom_libretro.so|||
+Cave Story|CAVESTORY|cavestory|true|nxengine_libretro.so||exe,zip,7z|/media/sdcard/roms/CAVESTORY/
 Phillips Videopac|VIDEOPAC|videopac|true|o2em_libretro.so|O2em|bin,7z,zip|/media/sdcard/roms/VIDEOPAC/
 SEGA 32X|32X_Picodrive|32x|true|picodrive_libretro.so|Picodrive|zip,32x,7z|/media/sdcard/roms/32X/
 SEGA MD|MD_Pic|md|true|picodrive_libretro.so|Picodrive|zip,bin,smd,md,gen,7z|/media/sdcard/roms/MD/
@@ -49,8 +55,11 @@ Nintendo SNES|SFC_S9x2005Plus|sfc|true|snes9x2005_plus_libretro.so|Snes9x+|smc,s
 Atari 2600|A2600|a2600|true|stella2014_libretro.so|Stella|bin,a26,7z,zip|/media/sdcard/roms/A2600/
 TIC-80|TIC80|tic80|true|tic80_libretro.so||tic,7z,zip|/media/sdcard/roms/TIC80/
 Quake|QUAKE|quake|true|tyrquake_libretro.so|TyrQuake|pak,zip,7z|/media/sdcard/roms/QUAKE/
+VaporSpec|VAPORSPEC|vaporspec|true|vaporspec_libretro.so||vaporbin|/media/sdcard/roms/VAPORSPEC/
 Commodore 64|C64|c64|true|vice_x64_libretro.so|Vice|crt,d64,t64,bin,7z,zip|/media/sdcard/roms/C64/
 Quake2|QUAKE2|quake2|true|vitaquake2_libretro.so|VitaQuake 2|pak|/media/sdcard/roms/QUAKE2/baseq2/
 Quake2 Ground Zero|QUAKE2_rogue|quake2|true|vitaquake2-rogue_libretro.so|VitaQuake 2 [Rogue]|pak|/media/sdcard/roms/QUAKE2/rogue/
 Quake2 The Reckoning|QUAKE2_xatrix|quake2|true|vitaquake2-xatrix_libretro.so|VitaQuake 2 [Xatrix]|pak|/media/sdcard/roms/QUAKE2/xatrix/
 Quake2 Zaero|QUAKE2_zaero|quake2|true|vitaquake2-zaero_libretro.so|VitaQuake 2 [Zaero]|pak|/media/sdcard/roms/QUAKE2/zaero/
+WASM-4|WASM4|wasm4|true|wasm4_libretro.so||wasm|/media/sdcard/roms/WASM4/
+Rick Dangerous|XRICK|xrick|true|xrick_libretro.so||zip|/media/sdcard/roms/XRICK/
