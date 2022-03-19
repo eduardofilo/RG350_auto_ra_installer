@@ -11,7 +11,7 @@ A continuación se muestra la lista completa de cores que se incluyen en el inst
 |Fuente|Core|Sistemas|Necesita ficheros|Extensiones soportadas|Observaciones|
 |:-----|:---|:-------|:----------------|:---------------------|:------------|
 |Oficial|a5200_libretro.so|Atari 5200|true|bin, a52|Necesita BIOS: `5200.rom` (md5: `281f20ea4320404ec820fb7ec0693b38`)|
-|Oficial|arduous_libretro.so|Arduboy|true|hex|Sólo stock/ROGUE|
+|Oficial|arduous_libretro.so|Arduboy|true|hex| |
 |Oficial|bk_libretro.so|Elektronika - BK-0010/BK-0011|true|bin|Necesita BIOS (model `BK-0010`): `bk/BASIC10.ROM` (md5: `3fa774326d75410a065659aea80252f0`), `bk/FOCAL10.ROM` (md5: `5737f972e8638831ab71e9139abae052`), `bk/MONIT10.ROM` (md5: `95f8c41c6abf7640e35a6a03cecebd01`). Unsupported video mode en stock/ROGUE.|
 |Oficial|cannonball_libretro.so|SEGA Outrun|true|game, 88|Necesita ficheros de juego y un fichero dummy con la extensión `.game`|
 |Oficial|chailove_libretro.so|ChaiLove|true|chai, chailove|[Framework](https://love2d.org/) para creación de juegos 2D en Lua. Sólo ODbeta|
@@ -33,6 +33,7 @@ A continuación se muestra la lista completa de cores que se incluyen en el inst
 |Oficial|gpsp_libretro.so|GBA|true|gba, bin|BIOS opcional: `gba_bios.bin` (md5: `a860e8c0b6d573d191e4ec7db1b1e4f6`)|
 |Oficial|handy_libretro.so|LYNX|true|lnx, o|Necesita BIOS: `lynxboot.img` (md5: `fcd403db69f54290b51035d82f835e7b`)|
 |Oficial|jaxe_libretro.so|CHIP-8|true|ch8, sc8, xo8| |
+|Oficial|jumpnbump_libretro.so|Jump 'n Bump|true|dat| |
 |Oficial|mame2003_libretro.so|MAME2003|true|zip| |
 |Oficial|mame2003_plus_libretro.so|MAME2003|true|zip| |
 |Oficial|mednafen_pce_fast_libretro.so|PCE, PCE CD|true|pce, cue, ccd, chd, toc, m3u|PCE CD necesita BIOS: `syscard3.pce` (md5: `38179df8f4ac870017db21ebcbf53114`)|
@@ -40,6 +41,7 @@ A continuación se muestra la lista completa de cores que se incluyen en el inst
 |Oficial|mgba_libretro.so|GBA|true|gb, gbc, gba|BIOS opcional: `gba_bios.bin` (md5: `a860e8c0b6d573d191e4ec7db1b1e4f6`)|
 |Oficial|minivmac_libretro.so|MAC|true|dsk,img,zip,hvf,cmd|Necesita BIOS: `MacII.ROM` (md5: `66223be1497460f1e60885eeb35e03cc`)|
 |Oficial|mrboom_libretro.so|MrBoom|false| | |
+|Oficial|mu_libretro.so|Palm|true|prc,pqa,img|Necesita BIOS: `palmos41-en-m515.rom` (md5: `83cb1d1c76e568b916dc2e7c0bf669f6`). Necesita un stick para manejar el stylus, por lo que no funciona sobre RG280V. Sólo stock/ROGUE|
 |Oficial|nxengine_libretro.so|Cave Story|true|exe|Necesita ficheros de juego|
 |Oficial|o2em_libretro.so|Magnavox Odyssey2, Phillips Videopac+|true|bin|Necesita BIOS: `o2rom.bin` (md5: `562d5ebf9e030a40d6fabfc2f33139fd`)|
 |Oficial|picodrive_libretro.so|MS, MD, SEGA CD, SEGA 32X|true|bin, gen, smd, md, 32x, chd, cue, iso, sms, 68k, m3u|SEGA CD necesita BIOS: `bios_CD_U.bin` (md5: `2efd74e3232ff260e371b99f84024f7f`), `bios_CD_E.bin` (md5: `e66fa1dc5820d254611fdcdba0662372`), `bios_CD_J.bin` (md5: `278a9397d192149e84e820ac621a8edd`)|
@@ -47,8 +49,10 @@ A continuación se muestra la lista completa de cores que se incluyen en el inst
 |Oficial|potator_libretro.so|Watara Supervision|true|bin, sv| |
 |Oficial|prboom_libretro.so|DOOM|true|wad, iwad, pwad|Necesita ficheros de juego|
 |Oficial|prosystem_libretro.so|Atari 7800|true|a78, bin|BIOS opcional: `7800 BIOS (U).rom` (md5: `0763f1ffb006ddbe32e52d497ee848ae`)|
+|Oficial|quasi88_libretro.so|NEC PC-88|true|d88,u88,m3u|Necesita BIOS: `quasi88/n88.rom`, `quasi88/n88_0.rom`|
 |Oficial|quicknes_libretro.so|NES|true|nes| |
 |Oficial|race_libretro.so|NGP|true|ngp, ngc, ngpc, npc| |
+|Oficial|retro8_libretro.so|PICO-8|true|png, p8| |
 |Oficial|scummvm_libretro.so|ScummVM|true|<consultar larga lista en core_info/scummvm_libretro.info>| |
 |Oficial|snes9x2005_libretro.so|SNES|true|smc, fig, sfc, gd3, gd7, dx2, bsx, swc| |
 |Oficial|snes9x2005_plus_libretro.so|SNES|true|smc, fig, sfc, gd3, gd7, dx2, bsx, swc| |
@@ -61,7 +65,8 @@ A continuación se muestra la lista completa de cores que se incluyen en el inst
 |Oficial|vitaquake2-rogue_libretro.so|QUAKE2 Ground Zero|true|pak|Necesita ficheros de juego|
 |Oficial|vitaquake2-xatrix_libretro.so|QUAKE2 The Reckoning|true|pak|Necesita ficheros de juego|
 |Oficial|vitaquake2-zaero_libretro.so|QUAKE2 Zaero|true|pak|Necesita ficheros de juego|
-|Oficial|wasm4_libretro.so|[WASM-4](https://wasm4.org/)|true|wasm|Sólo stock/ROGUE|
+|Oficial|wasm4_libretro.so|[WASM-4](https://wasm4.org/)|true|wasm| |
+|Oficial|x1_libretro.so|Sharp X1|true|dx1,zip,2d,2hd,tfd,d88,88d,hdm,xdf,dup,tap,cmd|Necesita BIOS: `xmil/IPLROM.X1` (md5: `eeeea1cd29c6e0e8b094790ae969bfa7`), `xmil/IPLROM.X1T` (md5: `851e4a5936f17d13f8c39a980cf00d77`)|
 |Oficial|xrick_libretro.so|Rick Dangerous|true|zip| |
 |Poligraf|2048_libretro.so|[2048](https://en.wikipedia.org/wiki/2048_(video_game))|false| | |
 |Poligraf|81_libretro.so|Sinclair ZX81|true|p, tzx, t81| |
@@ -77,18 +82,15 @@ A continuación se muestra la lista completa de cores que se incluyen en el inst
 |Poligraf|hatari_libretro.so|Atari ST|true|st, msa, zip, stx, dim, ipf, m3u|Necesita BIOS: `tos.img` (md5: `c1c57ce48e8ee4135885cee9e63a68a2`). Configuración complicada a causa del unsupported video mode. Conseguido cierto éxito con ODBeta, pero no con stock/ROGUE.|
 |Poligraf|lowresnx_libretro.so|LowRes NX|true|nx| |
 |Poligraf|mednafen_vb_libretro.so|Nintendo Virtual Boy|true|vb, vboy, bin|Rendimiento pobre|
-|Poligraf|mu_libretro.so|Palm|true|prc,pqa,img|Necesita BIOS: `palmos41-en-m515.rom` (md5: `83cb1d1c76e568b916dc2e7c0bf669f6`). Necesita un stick para manejar el stylus, por lo que no funciona sobre RG280V.|
 |Poligraf|nekop2_libretro.so|NEC PC-98|true|d98,zip,98d,fdi,fdd,2hd,tfd,d88,88d,hdm,xdf,dup,cmd,hdi,thd,nhd,hdd|No he conseguido hacerlo funcionar. Puede que [necesite algunas BIOS](https://docs.libretro.com/library/neko_project_ii_kai/#bios).|
 |Poligraf|pcsx_rearmed_libretro.so|PlayStation|true|bin,cue,img,mdf,pbp,toc,cbn,m3u,ccd,chd|Rendimiento pobre|
 |Poligraf|[pocketcdg_libretro.so](https://docs.libretro.com/library/pocketcdg/)|PocketCDG|true|cdg| |
 |Poligraf|puae_libretro.so|Commodore Amiga|true|adf, adz, dms, fdi, ipf, hdf, hdz, lha, slave, info, cue, ccd, nrg, mds, iso, chd, uae, m3u, zip, 7z, rp9|Necesita BIOS: `kick34005.A500` (md5: `82a21c1890cae844b3df741f2762d48d`)|
-|Poligraf|quasi88_libretro.so|NEC PC-88|true|d88,u88,m3u|Necesita BIOS: `quasi88/n88.rom`, `quasi88/n88_0.rom`|
 |Poligraf|reminiscence_libretro.so|Flashback|true|map, aba, seq, lev|Necesita ficheros de juego. No he conseguido hacerlo funcionar.|
 |Poligraf|stonesoup_libretro.so|Dungeon Crawl Stone Soup|true|crawlrc|Necesita [ficheros de juego](https://github.com/libretro/crawl-ref/tree/master/crawl-ref/source/dat) y un fichero vacío `game.crawlrc` (instrucciones [aquí](https://docs.libretro.com/library/stone_soup/#how-to-start-the-dungeon-crawl-stone-soup-core)). `Unsupported video mode` sobre RG280/stock/ROGUE, reinicios sobre ODBeta.|
 |Poligraf|theodore_libretro.so|Thomson - MO/TO|true|fd, sap, k7, m7, m5, rom|Configuración complicada debido a unsupported video mode. Conseguido cierto éxito con el modelo MO5 sobre ODBeta, pero no sobre stock/ROGUE.|
 |Poligraf|uzem_libretro.so|Uzebox|true|uze|Rendimiento pobre|
 |Poligraf|vecx_libretro.so|Vectrex|true|bin,vec| |
-|Poligraf|x1_libretro.so|Sharp X1|true|dx1,zip,2d,2hd,tfd,d88,88d,hdm,xdf,dup,tap,cmd|Necesita BIOS: `xmil/IPLROM.X1` (md5: `eeeea1cd29c6e0e8b094790ae969bfa7`), `xmil/IPLROM.X1T` (md5: `851e4a5936f17d13f8c39a980cf00d77`)|
 
 ## Parametrización de OPKs
 

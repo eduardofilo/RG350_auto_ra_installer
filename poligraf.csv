@@ -18,10 +18,8 @@ NEC PC-98|PC98|pc88|true|nekop2_libretro.so|Neko Project II|d98,zip,98d,fdi,fdd,
 PlayStation|PS|psx|true|pcsx_rearmed_libretro.so|PCSX ReARMed|bin,cue,img,mdf,pbp,toc,cbn,m3u,ccd,chd,7z|/media/sdcard/roms/PS/
 PocketCDG|CDG|cdg|true|pocketcdg_libretro.so||cdg,7z|/media/sdcard/roms/CDG/
 Commodore Amiga|AMIGA|amiga|true|puae_libretro.so|Puae|adf,adz,dms,fdi,ipf,hdf,hdz,lha,slave,info,cue,ccd,nrg,mds,iso,chd,uae,m3u,zip,7z,rp9|/media/sdcard/roms/AMIGA/
-NEC PC-88|PC88|pc88|true|quasi88_libretro.so|Quasi88|d88,u88,m3u,zip,7z|/media/sdcard/roms/PC88/
 Flashback|FLASHBACK|flashback|true|reminiscence_libretro.so|Reminiscence|map,aba,seq,lev,zip,7z|/media/sdcard/roms/FLASHBACK/
 Stone Soup|STONESOUP|stonesoup|true|stonesoup_libretro.so||crawlrc|/media/sdcard/roms/STONESOUP/
 Thomson MO-TO|MOTO|moto|true|theodore_libretro.so|Theodore|fd,sap,k7,m7,m5,rom,zip,7z|/media/sdcard/roms/MOTO/
 Uzebox|UZEBOX|uzebox|true|uzem_libretro.so||uze,zip,7z|/media/sdcard/roms/UZEBOX/
 Vectrex|VECTREX|vectrex|true|vecx_libretro.so|Vecx|bin,vec,zip,7z|/media/sdcard/roms/VECTREX/
-Sharp X1|X1|x1|true|x1_libretro.so||dx1,zip,2d,2hd,tfd,d88,88d,hdm,xdf,dup,tap,cmd,7z|/media/sdcard/roms/X1/
