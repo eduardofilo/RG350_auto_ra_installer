@@ -13,7 +13,6 @@ Nintendo G&W|GW|gw|true|gw_libretro.so||mgw,zip,7z|/media/sdcard/roms/GW/
 Atari ST|ATARIST|atarist|true|hatari_libretro.so|Hatari|st,msa,stx,dim,ipf,m3u,zip,7z|/media/sdcard/roms/ATARIST/
 LowRes NX|LOWRESNX|lowresnx|true|lowresnx_libretro.so||nx,zip,7z|/media/sdcard/roms/LOWRESNX/
 Nintendo Virtual Boy|VB|vb|true|mednafen_vb_libretro.so|Mednafen VB|vb,vboy,bin,zip,7z|/media/sdcard/roms/VB/
-Palm|PALM|palm|true|mu_libretro.so|Mu|prc,pqa,img,7z|/media/sdcard/roms/PALM/
 NEC PC-98|PC98|pc88|true|nekop2_libretro.so|Neko Project II|d98,zip,98d,fdi,fdd,2hd,tfd,d88,88d,hdm,xdf,dup,cmd,hdi,thd,nhd,hdd,zip,7z|/media/sdcard/roms/PC98/
 PlayStation|PS|psx|true|pcsx_rearmed_libretro.so|PCSX ReARMed|bin,cue,img,mdf,pbp,toc,cbn,m3u,ccd,chd,7z|/media/sdcard/roms/PS/
 PocketCDG|CDG|cdg|true|pocketcdg_libretro.so||cdg,7z|/media/sdcard/roms/CDG/
