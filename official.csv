@@ -45,6 +45,7 @@ SEGA 32X|32X_Picodrive|32x|true|picodrive_libretro.so|Picodrive|zip,32x,7z|/medi
 SEGA MD|MD_Pic|md|true|picodrive_libretro.so|Picodrive|zip,bin,smd,md,gen,7z|/media/sdcard/roms/MD/
 SEGA CD|SEGACD_Pic|segacd|true|picodrive_libretro.so|Picodrive|bin,chd,7z,zip|/media/sdcard/roms/SEGACD/
 SEGA MS|SMS_Pic|sms|true|picodrive_libretro.so|Picodrive|zip,sms,7z|/media/sdcard/roms/SMS/
+PocketCDG|CDG|cdg|true|pocketcdg_libretro.so||cdg,7z|/media/sdcard/roms/CDG/
 PokeMini|POKEMINI|pokemini|true|pokemini_libretro.so||min,zip,7z|/media/sdcard/roms/POKEMINI/
 Watara Supervision|SUPERVISION|supervision|true|potator_libretro.so|Potator|sv,bin,7z,zip|/media/sdcard/roms/SUPERVISION/
 Doom|PRBOOM|doom|true|prboom_libretro.so|PrBoom|wad,zip,7z|/media/sdcard/roms/DOOM/

@@ -14,9 +14,24 @@ RA_DIST_FILE=${VERSION}_RetroArch.7z
 OPK_NAME_ST=RA_Stock_Installer_v${VERSION}.opk
 OPK_NAME_ODB=RA_ODBeta_Installer_v${VERSION}.opk
 
+if [ $# -ne 2 ] ; then
+    echo -e "usage: ./build.sh <conf_file.csv > <stock|odbeta>"
+    exit 1
+fi
+
+if [ ! -f ${1} ] ; then
+    echo "@@ ERROR: File ${1} not found" && exit 1
+fi
+CONF_CSV=$(basename "${1}" .csv)
+echo ${CONF_CSV}
+
+CONF_VER=$2
+if [[ ${CONF_VER} != "stock" && ${CONF_VER} != "odbeta" ]] ; then
+    echo "@@ ERROR: ${CONF_VER} not recognized" && exit 1
+fi
 
 # Stock
-if [ ${BUILD_STOCK} = true ] ; then
+if [ ${CONF_VER} = "stock" ] ; then
     echo "# Building Stock RA installer"
     if [ ! -f ${DIRECTORY}/build_st/${RA_DIST_FILE} ] ; then
         echo "    Downloading RA distribution"
@@ -141,7 +156,7 @@ fi
 
 
 # ODBeta
-if [ ${BUILD_ODBETA} = true ] ; then
+if [ ${CONF_VER} = "odbeta" ] ; then
     echo "# Building ODBeta RA installer"
     if [ ! -f ${DIRECTORY}/build_odb/${RA_DIST_FILE} ] ; then
         echo "    Downloading RA distribution"
