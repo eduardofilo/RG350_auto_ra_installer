@@ -8,30 +8,18 @@ BUILD_ODBETA=true       # Build ODBeta version of installer
 CONF_CSV=all            # Name of CSV with parameterization, without extension
 # END PARAMETER ZONE
 
+[[ ! -z "${E_BUILD_STOCK}" ]] && BUILD_STOCK="${E_BUILD_STOCK}"
+[[ ! -z "${E_BUILD_ODBETA}" ]] && BUILD_ODBETA="${E_BUILD_ODBETA}"
+[[ ! -z "${E_CONF_CSV}" ]] && CONF_CSV="${E_CONF_CSV}"
+
 VERSION=`cat v`
 DIRECTORY=$(pwd)
 RA_DIST_FILE=${VERSION}_RetroArch.7z
 OPK_NAME_ST=RA_Stock_Installer_v${VERSION}.opk
 OPK_NAME_ODB=RA_ODBeta_Installer_v${VERSION}.opk
 
-if [ $# -ne 2 ] ; then
-    echo -e "usage: ./build.sh <conf_file.csv > <stock|odbeta>"
-    exit 1
-fi
-
-if [ ! -f ${1} ] ; then
-    echo "@@ ERROR: File ${1} not found" && exit 1
-fi
-CONF_CSV=$(basename "${1}" .csv)
-echo ${CONF_CSV}
-
-CONF_VER=$2
-if [[ ${CONF_VER} != "stock" && ${CONF_VER} != "odbeta" ]] ; then
-    echo "@@ ERROR: ${CONF_VER} not recognized" && exit 1
-fi
-
 # Stock
-if [ ${CONF_VER} = "stock" ] ; then
+if [ ${BUILD_STOCK} = true ] ; then
     echo "# Building Stock RA installer"
     if [ ! -f ${DIRECTORY}/build_st/${RA_DIST_FILE} ] ; then
         echo "    Downloading RA distribution"
@@ -111,7 +99,7 @@ EOF
             [ ! "${array[6]}" = "" ] && echo "selectorfilter=${array[6]}" >> ${DIRECTORY}/files_st/links/retroarch_rg350_${array[1]}_exec.sh${browse}
             [ ! "${array[7]}" = "" ] && echo "selectordir=${array[7]}" >> ${DIRECTORY}/files_st/links/retroarch_rg350_${array[1]}_exec.sh${browse}
         else
-            echo "    @@ NOTE: Core ${array[4]} not found"
+            echo "    @@ NOTE: Core ${array[4]} not found, so OPK wrapper not built"
         fi
     done
     rm -rf ${DIRECTORY}/files_st/apps_ra/squashfs-root
@@ -156,7 +144,7 @@ fi
 
 
 # ODBeta
-if [ ${CONF_VER} = "odbeta" ] ; then
+if [ ${BUILD_ODBETA} = true ] ; then
     echo "# Building ODBeta RA installer"
     if [ ! -f ${DIRECTORY}/build_odb/${RA_DIST_FILE} ] ; then
         echo "    Downloading RA distribution"
@@ -225,7 +213,7 @@ clock=996
 EOF
             [ ! "${array[7]}" = "" ] && echo "selectordir=${array[7]}" >> ${DIRECTORY}/files_odb/links/retroarch_rg350_${array[1]}
         else
-            echo "    @@ NOTE: Core ${array[4]} not found"
+            echo "    @@ NOTE: Core ${array[4]} not found, so OPK wrapper not built"
         fi
     done
     rm -rf ${DIRECTORY}/files_odb/apps_ra/squashfs-root
