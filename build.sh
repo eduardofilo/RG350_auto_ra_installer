@@ -12,8 +12,8 @@ CONF_CSV=all            # Name of CSV with parameterization, without extension
 [[ ! -z "${E_BUILD_ODBETA}" ]] && BUILD_ODBETA="${E_BUILD_ODBETA}"
 [[ ! -z "${E_CONF_CSV}" ]] && CONF_CSV="${E_CONF_CSV}"
 
-VERSION=`cat v`
 DIRECTORY=$(cd $(dirname "${BASH_SOURCE[0]}") && pwd)
+VERSION=$(cat ${DIRECTORY}/v)
 RA_DIST_FILE=${VERSION}_RetroArch.7z
 OPK_NAME_ST=RA_Stock_Installer_v${VERSION}.opk
 OPK_NAME_ODB=RA_ODBeta_Installer_v${VERSION}.opk
@@ -41,8 +41,8 @@ if [ ${BUILD_STOCK} = true ] ; then
     [ ! ${status} -eq 0 ] && echo "@@ ERROR: Problem unpacking RA distribution" && exit ${status}
 
     echo "    Building RA core pack"
-    mv ${DIRECTORY}/build_st/retroarch/bin/retroarch_rg350 files_st/
-    mv ${DIRECTORY}/build_st/retroarch/retroarch_rg350.opk files_st/
+    mv ${DIRECTORY}/build_st/retroarch/bin/retroarch_rg350 ${DIRECTORY}/files_st/
+    mv ${DIRECTORY}/build_st/retroarch/retroarch_rg350.opk ${DIRECTORY}/files_st/
     cp -r ${DIRECTORY}/build_st/retroarch/.retroarch/cores ${DIRECTORY}/build_st/cores
     mkdir -p ${DIRECTORY}/build_st/retroarch/.retroarch/cores
     cp ${DIRECTORY}/opendingux_ra_cores_unofficial/"stock or rogue"/*.so ${DIRECTORY}/build_st/retroarch/.retroarch/cores/
@@ -169,8 +169,8 @@ if [ ${BUILD_ODBETA} = true ] ; then
     [ ! ${status} -eq 0 ] && echo "@@ ERROR: Problem unpacking RA distribution" && exit ${status}
 
     echo "    Building RA core pack"
-    mv ${DIRECTORY}/build_odb/retroarch/bin/retroarch_rg350_odbeta files_odb/
-    mv ${DIRECTORY}/build_odb/retroarch/retroarch_rg350_odbeta.opk files_odb/
+    mv ${DIRECTORY}/build_odb/retroarch/bin/retroarch_rg350_odbeta ${DIRECTORY}/files_odb/
+    mv ${DIRECTORY}/build_odb/retroarch/retroarch_rg350_odbeta.opk ${DIRECTORY}/files_odb/
     cp -r ${DIRECTORY}/build_odb/retroarch/.retroarch/cores ${DIRECTORY}/build_odb/cores
     mkdir -p ${DIRECTORY}/build_odb/retroarch/.retroarch/cores
     cp ${DIRECTORY}/opendingux_ra_cores_unofficial/"stock or rogue"/*.so ${DIRECTORY}/build_odb/retroarch/.retroarch/cores/
