@@ -13,7 +13,7 @@ CONF_CSV=all            # Name of CSV with parameterization, without extension
 [[ ! -z "${E_CONF_CSV}" ]] && CONF_CSV="${E_CONF_CSV}"
 
 VERSION=`cat v`
-DIRECTORY=$(pwd)
+DIRECTORY=$(cd $(dirname "${BASH_SOURCE[0]}") && pwd)
 RA_DIST_FILE=${VERSION}_RetroArch.7z
 OPK_NAME_ST=RA_Stock_Installer_v${VERSION}.opk
 OPK_NAME_ODB=RA_ODBeta_Installer_v${VERSION}.opk
@@ -21,6 +21,9 @@ OPK_NAME_ODB=RA_ODBeta_Installer_v${VERSION}.opk
 # Stock
 if [ ${BUILD_STOCK} = true ] ; then
     echo "# Building Stock RA installer"
+    if [ ! -d ${DIRECTORY}/build_st ] ; then
+        mkdir ${DIRECTORY}/build_st
+    fi
     if [ ! -f ${DIRECTORY}/build_st/${RA_DIST_FILE} ] ; then
         echo "    Downloading RA distribution"
         RA_DIST_URL_ST=https://buildbot.libretro.com/nightly/dingux/mips32/${RA_DIST_FILE}
@@ -146,6 +149,9 @@ fi
 # ODBeta
 if [ ${BUILD_ODBETA} = true ] ; then
     echo "# Building ODBeta RA installer"
+    if [ ! -d ${DIRECTORY}/build_odb ] ; then
+        mkdir ${DIRECTORY}/build_odb
+    fi
     if [ ! -f ${DIRECTORY}/build_odb/${RA_DIST_FILE} ] ; then
         echo "    Downloading RA distribution"
         RA_DIST_URL_ST=https://buildbot.libretro.com/nightly/dingux/mips32-odbeta/${RA_DIST_FILE}
