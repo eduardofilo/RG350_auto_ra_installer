@@ -1,4 +1,5 @@
 OPK Wrapper Title|OPK Wrapper file name|Icon|Browse|Core|Core name|ROM extensions|ROM path
+ZX81|ZX81|zx81|true|81_libretro.so||p,tzx,t81,zip,7z|/media/sdcard/roms/ZX81/
 Atari 5200|A5200|a5200|true|a5200_libretro.so|Atari800|bin,a52,zip,7z|/media/sdcard/roms/A5200/
 Arduboy|ARDUOUS|arduous|true|arduous_libretro.so||hex|/media/sdcard/roms/ARDUBOY/
 BK-0011|BK0011|bk0011|true|bk_libretro.so||bin,zip,7z|/media/sdcard/roms/BK0011/
@@ -12,6 +13,7 @@ CPS2|CPS2|cps|true|fbalpha2012_cps2_libretro.so|FBA|zip,7z|/media/sdcard/roms/CP
 Neo Geo|NEOGEO|neogeo|true|fbalpha2012_neogeo_libretro.so|FBA|zip,7z|/media/sdcard/roms/NEOGEO/
 Nintendo NES|FC_FCEUmm|fc|true|fceumm_libretro.so|FCEUmm|zip,nes,7z|/media/sdcard/roms/FC/
 ChannelF|CHANNELF|channelf|true|freechaf_libretro.so|FreeChaf|bin,chf,zip,7z|/media/sdcard/roms/CHANNELF/
+ZX Spectrum|ZX|zx|true|fuse_libretro.so|FUSE|tzx,tap,z80,rzx,scl,trd,dsk,zip,7z|/media/sdcard/roms/ZX/
 Nintendo GB|GB|gb|true|gambatte_libretro.so|Gambatte|gb,gz,zip,7z|/media/sdcard/roms/GB/
 Nintendo GBC|GBC|gbc|true|gambatte_libretro.so|Gambatte|gbc,zip,7z|/media/sdcard/roms/GBC/
 Nintendo GB|GB_gear|gb|true|gearboy_libretro.so|Gearboy|gb,dmg,cgb,sgb,zip,7z|/media/sdcard/roms/GB/
@@ -27,6 +29,7 @@ SEGA SG-1000|SG1000|sg1000|true|genesis_plus_gx_libretro.so|Genesis Plus|zip,sg,
 SEGA MS|SMS_Gen|sms|true|genesis_plus_gx_libretro.so|Genesis Plus|zip,sms,7z|/media/sdcard/roms/SMS/
 Gong|GONG|gong|false|gong_libretro.so|||
 Nintendo GBA|GBA_gpSP|gba|true|gpsp_libretro.so|gpSP|gba,zip,7z|/media/sdcard/roms/GBA/
+Nintendo G&W|GW|gw|true|gw_libretro.so||mgw,zip,7z|/media/sdcard/roms/GW/
 Atari Lynx|LYNX|atari_lynx|true|handy_libretro.so|Handy|zip,lnx,7z|/media/sdcard/roms/LYNX/
 CHIP-8|CHIP-8|chip8|true|jaxe_libretro.so|JAXE|ch8,sc8,xo8,zip,7z|/media/sdcard/roms/CHIP8/
 Jump 'n Bump|JUMPNBUMP|jumpbump|true|jumpnbump_libretro.so||dat|/media/sdcard/roms/JUMPNBUMP/
