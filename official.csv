@@ -1,5 +1,6 @@
 OPK Wrapper Title|OPK Wrapper file name|Icon|Browse|Core|Core name|ROM extensions|ROM path
 ZX81|ZX81|zx81|true|81_libretro.so||p,tzx,t81,zip,7z|/media/sdcard/roms/ZX81/
+2048|2048|2048|false|2048_libretro.so|||
 Atari 5200|A5200|a5200|true|a5200_libretro.so|Atari800|bin,a52,zip,7z|/media/sdcard/roms/A5200/
 Arduboy|ARDUOUS|arduous|true|arduous_libretro.so||hex|/media/sdcard/roms/ARDUBOY/
 BK-0011|BK0011|bk0011|true|bk_libretro.so||bin,zip,7z|/media/sdcard/roms/BK0011/
