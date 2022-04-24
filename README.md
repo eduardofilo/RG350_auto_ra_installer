@@ -10,6 +10,8 @@ Below is the full list of cores that are included in the final generated OPK ins
 
 |Source|Core|System|Need files|Supported extensions|Observations|
 |:-----|:---|:-----|:---------|:-------------------|:-----------|
+|Official|2048_libretro.so|[2048](https://en.wikipedia.org/wiki/2048_(video_game))|false| | |
+|Official|81_libretro.so|Sinclair ZX81|true|p, tzx, t81| |
 |Official|a5200_libretro.so|Atari 5200|true|bin, a52|Needs BIOS: `5200.rom` (md5: `281f20ea4320404ec820fb7ec0693b38`)|
 |Official|arduous_libretro.so|Arduboy|true|hex| |
 |Official|bk_libretro.so|Elektronika - BK-0010/BK-0011|true|bin|Needs BIOS (model `BK-0010`): `bk/BASIC10.ROM` (md5: `3fa774326d75410a065659aea80252f0`), `bk/FOCAL10.ROM` (md5: `5737f972e8638831ab71e9139abae052`), `bk/MONIT10.ROM` (md5: `95f8c41c6abf7640e35a6a03cecebd01`). Unsupported video mode on stock/ROGUE.|
@@ -23,6 +25,7 @@ Below is the full list of cores that are included in the final generated OPK ins
 |Official|fbalpha2012_neogeo_libretro.so|Neo Geo|true|zip| |
 |Official|fceumm_libretro.so|Nintendo NES|true|fds, nes, unif, unf|Disk System needs BIOS: `disksys.rom` (md5: `ca30b50f880eb660a320674ed365ef7a`)|
 |Official|freechaf_libretro.so|Fairchild ChannelF|true|bin, chf|Needs BIOS: `sl31253.bin` (md5: `ac9804d4c0e9d07e33472e3726ed15c3`), `sl31254.bin` (md5: `da98f4bb3242ab80d76629021bb27585`), `sl90025.bin` (md5: `95d339631d867c8f1d15a5f2ec26069d`)|
+|Poligraf|fuse_libretro.so|Sinclair ZX Spectrum|true|tzx, tap, z80, rzx, scl, trd, dsk| |
 |Official|gambatte_libretro.so|GB/GBC|true|gb, gbc, dmg|BIOS optional: `gb_bios.bin` (md5: `32fbbd84168d3482956eb3c5051637f5`), `gbc_bios.bin` (md5: `dbfce9db9deaa2567f6a84fde55f9680`)|
 |Official|gearboy_libretro.so|GB/GBC|true|gb, dmg, gbc, cgb, sgb| |
 |Official|gearcoleco_libretro.so|ColecoVision|true|col,cv,bin,rom|Needs BIOS: `colecovision.rom` (md5: `2c66f5911e5b42b8ebe113403548eee7`)|
@@ -31,6 +34,7 @@ Below is the full list of cores that are included in the final generated OPK ins
 |Official|genesis_plus_gx_wide_libretro.so|SG-1000, MS, GG, MD, SEGA CD|true|mdx, md, smd, gen, bin, cue, iso, sms, bms, gg, sg, 68k, chd, m3u|SEGA CD needs BIOS: `bios_CD_E.bin`, `bios_CD_U.bin`, `bios_CD_J.bin`|
 |Official|gong_libretro.so|Pong|false| | |
 |Official|gpsp_libretro.so|GBA|true|gba, bin|BIOS optional: `gba_bios.bin` (md5: `a860e8c0b6d573d191e4ec7db1b1e4f6`)|
+|Official|gw_libretro.so|Nintendo Game&Watch|true|mgw|Unsupported video mode in some games on stock/ROGUE, but pressing some controls it runs sometimes|
 |Official|handy_libretro.so|LYNX|true|lnx, o|Needs BIOS: `lynxboot.img` (md5: `fcd403db69f54290b51035d82f835e7b`)|
 |Official|jaxe_libretro.so|CHIP-8|true|ch8, sc8, xo8| |
 |Official|jumpnbump_libretro.so|Jump 'n Bump|true|dat| |
@@ -46,6 +50,7 @@ Below is the full list of cores that are included in the final generated OPK ins
 |Official|nxengine_libretro.so|Cave Story|true|exe|Needs game files|
 |Official|o2em_libretro.so|Magnavox Odyssey2, Phillips Videopac+|true|bin|Needs BIOS: `o2rom.bin` (md5: `562d5ebf9e030a40d6fabfc2f33139fd`)|
 |Official|picodrive_libretro.so|MS, MD, SEGA CD, SEGA 32X|true|bin, gen, smd, md, 32x, chd, cue, iso, sms, 68k, m3u|SEGA CD needs BIOS: `bios_CD_U.bin` (md5: `2efd74e3232ff260e371b99f84024f7f`), `bios_CD_E.bin` (md5: `e66fa1dc5820d254611fdcdba0662372`), `bios_CD_J.bin` (md5: `278a9397d192149e84e820ac621a8edd`)|
+|Official|[pocketcdg_libretro.so](https://docs.libretro.com/library/pocketcdg/)|PocketCDG|true|cdg| |
 |Official|pokemini_libretro.so|POKEMINI|true|min|Needs BIOS: `bios.min` (md5: `1e4fb124a3a886865acb574f388c803d`)|
 |Official|potator_libretro.so|Watara Supervision|true|bin, sv| |
 |Official|prboom_libretro.so|DOOM|true|wad, iwad, pwad|Needs game files|
@@ -69,23 +74,18 @@ Below is the full list of cores that are included in the final generated OPK ins
 |Official|wasm4_libretro.so|[WASM-4](https://wasm4.org/)|true|wasm| |
 |Official|x1_libretro.so|Sharp X1|true|dx1,zip,2d,2hd,tfd,d88,88d,hdm,xdf,dup,tap,cmd|Needs BIOS: `xmil/IPLROM.X1` (md5: `eeeea1cd29c6e0e8b094790ae969bfa7`), `xmil/IPLROM.X1T` (md5: `851e4a5936f17d13f8c39a980cf00d77`)|
 |Official|xrick_libretro.so|Rick Dangerous|true|zip| |
-|Poligraf|2048_libretro.so|[2048](https://en.wikipedia.org/wiki/2048_(video_game))|false| | |
-|Poligraf|81_libretro.so|Sinclair ZX81|true|p, tzx, t81| |
 |Poligraf|atari800_libretro.so|Atari 5200|true|xfd, atr, cdm, cas, bin, a52, zip, atx, car, com, xex|Needs BIOS to emulate Atari5200: `5200.rom` (md5: `281f20ea4320404ec820fb7ec0693b38`)|
 |Poligraf|bluemsx_libretro.so|MSX, MSX2|true|rom,ri,mx1,mx2,col,dsk,cas,sg,sc,m3u|Needs BIOS in `.retroarch/system/Machines`|
 |Poligraf|cap32_libretro.so|Amstrad CPC|true|dsk, sna, zip, tap, cdt, voc, cpr, m3u| |
 |Poligraf|crocods_libretro.so|Amstrad CPC|true|dsk,sna,kcr| |
 |Poligraf|fmsx_libretro.so|MSX, MSX2|true|rom,mx1,mx2,dsk,cas|Needs BIOS: `MSX.ROM` (md5: `364a1a579fe5cb8dba54519bcfcdac0d`), `MSX2.ROM` (md5: `ec3a01c91f24fbddcbcab0ad301bc9ef`), `MSX2EXT.ROM` (md5: `2183c2aff17cf4297bdb496de78c2e8a`), `MSX2P.ROM` (md5: `847cc025ffae665487940ff2639540e5`), `MSX2PEXT.ROM` (md5: `7c8243c71d8f143b2531f01afa6a05dc`). Unsupported video mode en RG280/ODBeta.|
 |Poligraf|frodo_libretro.so|Commodore 64|true|d64,t64,x64,p00,lnx,zip| |
-|Poligraf|fuse_libretro.so|Sinclair ZX Spectrum|true|tzx, tap, z80, rzx, scl, trd, dsk| |
 |Poligraf|gme_libretro.so|Game Music Emu|true|ay, gbs, gym, hes, kss, nsf, nsfe, sap, spc, vgm, vgz, zip| |
-|Poligraf|gw_libretro.so|Nintendo Game&Watch|true|mgw|Unsupported video mode in some games on stock/ROGUE, but pressing some controls it runs sometimes|
 |Poligraf|hatari_libretro.so|Atari ST|true|st, msa, zip, stx, dim, ipf, m3u|Needs BIOS: `tos.img` (md5: `c1c57ce48e8ee4135885cee9e63a68a2`).Difficult configuration because of unsupported video mode. Achieved some success with ODBeta, but not with stock/ROGUE.|
 |Poligraf|lowresnx_libretro.so|LowRes NX|true|nx| |
 |Poligraf|mednafen_vb_libretro.so|Nintendo Virtual Boy|true|vb, vboy, bin|Poor performance|
 |Poligraf|nekop2_libretro.so|NEC PC-98|true|d98,zip,98d,fdi,fdd,2hd,tfd,d88,88d,hdm,xdf,dup,cmd,hdi,thd,nhd,hdd|I couldn't get it to work. May be it [needs some BIOS](https://docs.libretro.com/library/neko_project_ii_kai/#bios).|
 |Poligraf|pcsx_rearmed_libretro.so|PlayStation|true|bin,cue,img,mdf,pbp,toc,cbn,m3u,ccd,chd|Poor performance|
-|Poligraf|[pocketcdg_libretro.so](https://docs.libretro.com/library/pocketcdg/)|PocketCDG|true|cdg| |
 |Poligraf|puae_libretro.so|Commodore Amiga|true|adf, adz, dms, fdi, ipf, hdf, hdz, lha, slave, info, cue, ccd, nrg, mds, iso, chd, uae, m3u, zip, 7z, rp9|Needs BIOS: `kick34005.A500` (md5: `82a21c1890cae844b3df741f2762d48d`)|
 |Poligraf|reminiscence_libretro.so|Flashback|true|map, aba, seq, lev|Needs game files. I couldn't get it to work.|
 |Poligraf|stonesoup_libretro.so|Dungeon Crawl Stone Soup|true|crawlrc|Needs [game files](https://github.com/libretro/crawl-ref/tree/master/crawl-ref/source/dat) and an empty file `game.crawlrc` (instructions [here](https://docs.libretro.com/library/stone_soup/#how-to-start-the-dungeon-crawl-stone-soup-core)). `Unsupported video mode` on RG280/stock/ROGUE, reboots on beta.|
