@@ -32,6 +32,7 @@ A continuación se muestra la lista completa de cores que se incluyen en el inst
 |Oficial|gearsystem_libretro.so|SG-1000, GG, MD|true|sms, gg, sg, bin, rom| |
 |Oficial|genesis_plus_gx_libretro.so|SG-1000, MS, GG, MD, SEGA CD|true|mdx, md, smd, gen, bin, cue, iso, sms, bms, gg, sg, 68k, chd, m3u|SEGA CD necesita BIOS: `bios_CD_E.bin`, `bios_CD_U.bin`, `bios_CD_J.bin`|
 |Oficial|genesis_plus_gx_wide_libretro.so|SG-1000, MS, GG, MD, SEGA CD|true|mdx, md, smd, gen, bin, cue, iso, sms, bms, gg, sg, 68k, chd, m3u|SEGA CD necesita BIOS: `bios_CD_E.bin`, `bios_CD_U.bin`, `bios_CD_J.bin`|
+|Oficial|gme_libretro.so|Game Music Emu|true|ay, gbs, gym, hes, kss, nsf, nsfe, sap, spc, vgm, vgz, zip| |
 |Oficial|gong_libretro.so|Pong|false| | |
 |Oficial|gpsp_libretro.so|GBA|true|gba, bin|BIOS opcional: `gba_bios.bin` (md5: `a860e8c0b6d573d191e4ec7db1b1e4f6`)|
 |Oficial|gw_libretro.so|Nintendo Game&Watch|true|mgw|Unsupported video mode en algunos juegos sobre stock/ROGUE, pero pulsando algunas teclas a veces funcionan|
@@ -79,7 +80,6 @@ A continuación se muestra la lista completa de cores que se incluyen en el inst
 |Poligraf|crocods_libretro.so|Amstrad CPC|true|dsk,sna,kcr| |
 |Poligraf|fmsx_libretro.so|MSX, MSX2|true|rom,mx1,mx2,dsk,cas|Necesita BIOS: `MSX.ROM` (md5: `364a1a579fe5cb8dba54519bcfcdac0d`), `MSX2.ROM` (md5: `ec3a01c91f24fbddcbcab0ad301bc9ef`), `MSX2EXT.ROM` (md5: `2183c2aff17cf4297bdb496de78c2e8a`), `MSX2P.ROM` (md5: `847cc025ffae665487940ff2639540e5`), `MSX2PEXT.ROM` (md5: `7c8243c71d8f143b2531f01afa6a05dc`). Unsupported video mode en RG280/ODBeta.|
 |Poligraf|frodo_libretro.so|Commodore 64|true|d64,t64,x64,p00,lnx,zip| |
-|Poligraf|gme_libretro.so|Game Music Emu|true|ay, gbs, gym, hes, kss, nsf, nsfe, sap, spc, vgm, vgz, zip| |
 |Poligraf|hatari_libretro.so|Atari ST|true|st, msa, zip, stx, dim, ipf, m3u|Necesita BIOS: `tos.img` (md5: `c1c57ce48e8ee4135885cee9e63a68a2`). Configuración complicada a causa del unsupported video mode. Conseguido cierto éxito con ODBeta, pero no con stock/ROGUE.|
 |Poligraf|lowresnx_libretro.so|LowRes NX|true|nx| |
 |Poligraf|mednafen_vb_libretro.so|Nintendo Virtual Boy|true|vb, vboy, bin|Rendimiento pobre|
