@@ -35,6 +35,7 @@ Nintendo G&W|GW|gw|true|gw_libretro.so||mgw,zip,7z|/media/sdcard/roms/GW/
 Atari Lynx|LYNX|atari_lynx|true|handy_libretro.so|Handy|zip,lnx,7z|/media/sdcard/roms/LYNX/
 CHIP-8|CHIP-8|chip8|true|jaxe_libretro.so|JAXE|ch8,sc8,xo8,zip,7z|/media/sdcard/roms/CHIP8/
 Jump 'n Bump|JUMPNBUMP|jumpbump|true|jumpnbump_libretro.so||dat|/media/sdcard/roms/JUMPNBUMP/
+LowRes NX|LOWRESNX|lowresnx|true|lowresnx_libretro.so||nx,zip,7z|/media/sdcard/roms/LOWRESNX/
 Lua Engine (Lutro)|LUTRO|lutro|true|lutro_libretro.so||lutro,love,lua|/media/sdcard/roms/LUTRO/
 MAME2003|MAME2003|mame2003|true|mame2003_libretro.so||zip,7z|/media/sdcard/roms/MAME2003/
 MAME2003|MAME2003_PLUS|mame2003+|true|mame2003_plus_libretro.so||zip,7z|/media/sdcard/roms/MAME2003/
