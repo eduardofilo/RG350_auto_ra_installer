@@ -1,7 +1,5 @@
 #!/bin/bash
 
-set -e
-
 # BEGIN PARAMETER ZONE
 BUILD_STOCK=true        # Build Stock version of installer
 BUILD_ODBETA=true       # Build ODBeta version of installer
