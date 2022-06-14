@@ -12,7 +12,6 @@ else
 fi
 
 export DIALOGOPTS="--colors --backtitle \"RetroArch installer v${VERSION}\""
-echo "screen_color = (RED,RED,ON)" > /tmp/dialog_err.rc
 
 TEXTO="
 Choose if you want to uninstall core wrappers from previous installation and if you want to install preset configurations of cores (if you have an old installation and made changes, they will be overwritten).
