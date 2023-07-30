@@ -45,8 +45,9 @@ A continuación se muestra la lista completa de cores que se incluyen en el inst
 |Oficial|mednafen_wswan_libretro.so|WS|true|ws, wsc, pc2| |
 |Oficial|mgba_libretro.so|GBA|true|gb, gbc, gba|BIOS opcional: `gba_bios.bin` (md5: `a860e8c0b6d573d191e4ec7db1b1e4f6`)|
 |Oficial|minivmac_libretro.so|MAC|true|dsk,img,zip,hvf,cmd|Necesita BIOS: `MacII.ROM` (md5: `66223be1497460f1e60885eeb35e03cc`)|
-|Oficial|mrboom_libretro.so|MrBoom|false| | |
+|Oficial|mrboom_libretro.so|MrBoom|false| |Retirado en las últimas compilaciones. Se mantiene la parametrización por si vuelve.|
 |Oficial|mu_libretro.so|Palm|true|prc,pqa,img|Necesita BIOS: `palmos41-en-m515.rom` (md5: `83cb1d1c76e568b916dc2e7c0bf669f6`). Necesita un stick para manejar el stylus, por lo que no funciona sobre RG280V. Sólo stock/ROGUE|
+|Oficial|numero_libretro.so|Texas Instruments TI-83|true|8xp, 8xk, 8xg|Necesita BIOS: `ti83se.rom` (md5: `c6ff8204c5c81b7be34614dbbd690c8b`) o `ti83plus.rom` (md5: `8011181f810b5ec4e9d6a03f0e14257a`) o `ti83.rom` (md5: `d4448d09bbfde687c04f9e3310e023ab`)|
 |Oficial|nxengine_libretro.so|Cave Story|true|exe|Necesita ficheros de juego|
 |Oficial|o2em_libretro.so|Magnavox Odyssey2, Phillips Videopac+|true|bin|Necesita BIOS: `o2rom.bin` (md5: `562d5ebf9e030a40d6fabfc2f33139fd`)|
 |Oficial|picodrive_libretro.so|MS, MD, SEGA CD, SEGA 32X|true|bin, gen, smd, md, 32x, chd, cue, iso, sms, 68k, m3u|SEGA CD necesita BIOS: `bios_CD_U.bin` (md5: `2efd74e3232ff260e371b99f84024f7f`), `bios_CD_E.bin` (md5: `e66fa1dc5820d254611fdcdba0662372`), `bios_CD_J.bin` (md5: `278a9397d192149e84e820ac621a8edd`)|
@@ -65,6 +66,7 @@ A continuación se muestra la lista completa de cores que se incluyen en el inst
 |Oficial|stella2014_libretro.so|Atari 2600|true|a26, bin| |
 |Oficial|tic80_libretro.so|TIC-80|true|tic| |
 |Oficial|tyrquake_libretro.so|QUAKE|true|pak|Necesita ficheros de juego|
+|Oficial|uw8_libretro.so|MicroW8|true|uw8, wasm| |
 |Oficial|vaporspec_libretro.so|VaporSpec|true|vaporbin| |
 |Oficial|vice_x64_libretro.so|C64|true|d64, d71, d80, d81, d82, g64, g41, x64, t64, tap, prg, p00, crt, bin, zip, gz, d6z, d7z, d8z, g6z, g4z, x6z, cmd, m3u, vfl, vsf, nib, nbz, d2m, d4m| |
 |Oficial|vitaquake2_libretro.so|QUAKE2|true|pak|Necesita ficheros de juego|
