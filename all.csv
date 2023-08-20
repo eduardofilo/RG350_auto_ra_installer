@@ -23,7 +23,7 @@ ColecoVision|COLECO|coleco|true|gearcoleco_libretro.so|Gearcoleco|col,cv,bin,rom
 SEGA GG|GG_gearsys|gg|true|gearsystem_libretro.so|Gearsystem|gg,bin,rom,zip,7z|/media/sdcard/roms/GG/
 SEGA SG-1000|SG1000_gearsys|sg1000|true|gearsystem_libretro.so|Gearsystem|sg,bin,rom,zip,7z|/media/sdcard/roms/SG1000/
 SEGA MS|SMS_gearsys|sms|true|gearsystem_libretro.so|Gearsystem|sms,bin,rom,zip,7z|/media/sdcard/roms/SMS/
-SEGA GG|GG|gg|true|genesis_plus_gx_libretro.so|Genesis Plus|zip,gg,7z|/media/sdcard/roms/GG/
+SEGA GG|GG_genesis_plus|gg|true|genesis_plus_gx_libretro.so|Genesis Plus|zip,gg,7z|/media/sdcard/roms/GG/
 SEGA MD|MD_Gen|md|true|genesis_plus_gx_libretro.so|Genesis Plus|zip,bin,smd,md,mdx,gen,7z|/media/sdcard/roms/MD/
 SEGA CD|SEGACD|segacd|true|genesis_plus_gx_libretro.so|Genesis Plus|bin,chd,7z,zip|/media/sdcard/roms/SEGACD/
 SEGA SG-1000|SG1000|sg1000|true|genesis_plus_gx_libretro.so|Genesis Plus|zip,sg,7z|/media/sdcard/roms/SG1000/
