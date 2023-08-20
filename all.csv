@@ -26,7 +26,7 @@ SEGA MS|SMS_gearsys|sms|true|gearsystem_libretro.so|Gearsystem|sms,bin,rom,zip,7
 SEGA GG|GG_genesis_plus|gg|true|genesis_plus_gx_libretro.so|Genesis Plus|zip,gg,7z|/media/sdcard/roms/GG/
 SEGA MD|MD_Gen|md|true|genesis_plus_gx_libretro.so|Genesis Plus|zip,bin,smd,md,mdx,gen,7z|/media/sdcard/roms/MD/
 SEGA CD|SEGACD|segacd|true|genesis_plus_gx_libretro.so|Genesis Plus|bin,chd,7z,zip|/media/sdcard/roms/SEGACD/
-SEGA SG-1000|SG1000|sg1000|true|genesis_plus_gx_libretro.so|Genesis Plus|zip,sg,7z|/media/sdcard/roms/SG1000/
+SEGA SG-1000|SG1000_genesis_plus|sg1000|true|genesis_plus_gx_libretro.so|Genesis Plus|zip,sg,7z|/media/sdcard/roms/SG1000/
 SEGA MS|SMS_Gen|sms|true|genesis_plus_gx_libretro.so|Genesis Plus|zip,sms,7z|/media/sdcard/roms/SMS/
 Game Music Emu|GME|gme|true|gme_libretro.so||ay,gbs,gym,hes,kss,nsf,nsfe,sap,spc,vgm,vgz,zip,7z|/media/sdcard/roms/GME/
 Gong|GONG|gong|false|gong_libretro.so|||
