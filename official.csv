@@ -13,7 +13,6 @@ CPS1|CPS1|cps|true|fbalpha2012_cps1_libretro.so|FBA|zip,7z|/media/sdcard/roms/CP
 CPS2|CPS2|cps|true|fbalpha2012_cps2_libretro.so|FBA|zip,7z|/media/sdcard/roms/CPS/
 Neo Geo|NEOGEO|neogeo|true|fbalpha2012_neogeo_libretro.so|FBA|zip,7z|/media/sdcard/roms/NEOGEO/
 Nintendo NES|FC_FCEUmm|fc|true|fceumm_libretro.so|FCEUmm|zip,nes,7z|/media/sdcard/roms/FC/
-ChannelF|CHANNELF|channelf|true|freechaf_libretro.so|FreeChaf|bin,chf,zip,7z|/media/sdcard/roms/CHANNELF/
 ZX Spectrum|ZX|zx|true|fuse_libretro.so|FUSE|tzx,tap,z80,rzx,scl,trd,dsk,zip,7z|/media/sdcard/roms/ZX/
 Nintendo GB|GB|gb|true|gambatte_libretro.so|Gambatte|gb,gz,zip,7z|/media/sdcard/roms/GB/
 Nintendo GBC|GBC|gbc|true|gambatte_libretro.so|Gambatte|gbc,zip,7z|/media/sdcard/roms/GBC/
@@ -45,7 +44,6 @@ WonderSwan|WS|ws|true|mednafen_wswan_libretro.so|Mednafen Wswan|ws,wsc,pc2,zip,7
 Nintendo GBA|GBA_mGBA|gba|true|mgba_libretro.so|mGBA|gba,zip,7z|/media/sdcard/roms/GBA/
 Apple Macintosh|MAC|mac|True|minivmac_libretro.so|MinivmacII|dsk,img,zip,hvf,cmd|/media/sdcard/roms/MAC/
 Mr.Boom|MrBoom|mrboom|false|mrboom_libretro.so|||
-Palm|PALM|palm|true|mu_libretro.so|Mu|prc,pqa,img,7z|/media/sdcard/roms/PALM/
 Texas Instruments TI-83|TI83|ti83|true|numero_libretro.so|Numero|8xp,8xk,8xg,zip,7z|/media/sdcard/roms/TI83/
 Cave Story|CAVESTORY|cavestory|true|nxengine_libretro.so||exe,zip,7z|/media/sdcard/roms/CAVESTORY/
 Phillips Videopac|VIDEOPAC|videopac|true|o2em_libretro.so|O2em|bin,7z,zip|/media/sdcard/roms/VIDEOPAC/
