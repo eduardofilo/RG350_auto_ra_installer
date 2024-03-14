@@ -13,6 +13,7 @@ CPS1|CPS1|cps|true|fbalpha2012_cps1_libretro.so|FBA|zip,7z|/media/sdcard/roms/CP
 CPS2|CPS2|cps|true|fbalpha2012_cps2_libretro.so|FBA|zip,7z|/media/sdcard/roms/CPS/
 Neo Geo|NEOGEO|neogeo|true|fbalpha2012_neogeo_libretro.so|FBA|zip,7z|/media/sdcard/roms/NEOGEO/
 Nintendo NES|FC_FCEUmm|fc|true|fceumm_libretro.so|FCEUmm|zip,nes,7z|/media/sdcard/roms/FC/
+ChannelF|CHANNELF|channelf|true|freechaf_libretro.so|FreeChaf|bin,chf,zip,7z|/media/sdcard/roms/CHANNELF/
 ZX Spectrum|ZX|zx|true|fuse_libretro.so|FUSE|tzx,tap,z80,rzx,scl,trd,dsk,zip,7z|/media/sdcard/roms/ZX/
 Nintendo GB|GB|gb|true|gambatte_libretro.so|Gambatte|gb,gz,zip,7z|/media/sdcard/roms/GB/
 Nintendo GBC|GBC|gbc|true|gambatte_libretro.so|Gambatte|gbc,zip,7z|/media/sdcard/roms/GBC/
@@ -63,6 +64,7 @@ PICO-8|PICO8|pico8|true|retro8_libretro.so|Retro8|p8,png|/media/sdcard/roms/PICO
 ScummVM|SCUMMVM|scummvm|true|scummvm_libretro.so|||/media/sdcard/roms/SCUMMVM/
 Nintendo SNES|SFC_S9x2005|sfc|true|snes9x2005_libretro.so|Snes9x|smc,sfc,zip,7z|/media/sdcard/roms/SFC/
 Nintendo SNES|SFC_S9x2005Plus|sfc|true|snes9x2005_plus_libretro.so|Snes9x+|smc,sfc,zip,7z|/media/sdcard/roms/SFC/
+Java ME|JAVAME|javame|true|squirreljme_libretro.so||jar,sqc,jam,jad,kjx|/media/sdcard/roms/JAVAME/
 Atari 2600|A2600|a2600|true|stella2014_libretro.so|Stella|bin,a26,7z,zip|/media/sdcard/roms/A2600/
 TIC-80|TIC80|tic80|true|tic80_libretro.so||tic,7z,zip|/media/sdcard/roms/TIC80/
 Quake|QUAKE|quake|true|tyrquake_libretro.so|TyrQuake|pak,zip,7z|/media/sdcard/roms/QUAKE/
