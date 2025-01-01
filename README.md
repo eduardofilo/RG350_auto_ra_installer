@@ -13,6 +13,8 @@ Below is the full list of cores that are included in the final generated OPK ins
 |Official|2048_libretro.so|[2048](https://en.wikipedia.org/wiki/2048_(video_game))|false| | |
 |Official|81_libretro.so|Sinclair ZX81|true|p, tzx, t81| |
 |Official|a5200_libretro.so|Atari 5200|true|bin, a52|Needs BIOS: `5200.rom` (md5: `281f20ea4320404ec820fb7ec0693b38`)|
+|Official|anarch_libretro.so|Anarch|false| | |
+|Official|ardens_libretro.so|Arduboy|true|hex, arduboy| |
 |Official|arduous_libretro.so|Arduboy|true|hex| |
 |Official|bk_libretro.so|Elektronika - BK-0010/BK-0011|true|bin|Needs BIOS (model `BK-0010`): `bk/BASIC10.ROM` (md5: `3fa774326d75410a065659aea80252f0`), `bk/FOCAL10.ROM` (md5: `5737f972e8638831ab71e9139abae052`), `bk/MONIT10.ROM` (md5: `95f8c41c6abf7640e35a6a03cecebd01`). Unsupported video mode on stock/ROGUE.|
 |Official|cannonball_libretro.so|SEGA Outrun|true|game, 88|Needs game files and a dummy file with `.game` extension|
@@ -46,7 +48,7 @@ Below is the full list of cores that are included in the final generated OPK ins
 |Official|mgba_libretro.so|GBA|true|gb, gbc, gba|BIOS optional: `gba_bios.bin` (md5: `a860e8c0b6d573d191e4ec7db1b1e4f6`)|
 |Official|minivmac_libretro.so|MAC|true|dsk,img,zip,hvf,cmd|Needs BIOS: `MacII.ROM` (md5: `66223be1497460f1e60885eeb35e03cc`)|
 |Official|mrboom_libretro.so|MrBoom|false| |Withdrawn in the last compilations. Parameterization is maintained in case it returns.|
-|Official|mu_libretro.so|Palm|true|prc,pqa,img|Needs BIOS: `palmos41-en-m515.rom` (md5: `83cb1d1c76e568b916dc2e7c0bf669f6`). Needs a stick to manage the stylus, so doesn't run on RG280V. Only stock/ROGUE|
+|Official|mu_libretro.so|Palm|true|prc, pqa, img, pdb, zip|Needs BIOS: `palmos41-en-m515.rom` (md5: `83cb1d1c76e568b916dc2e7c0bf669f6`). Needs a stick to manage the stylus, so doesn't run on RG280V.|
 |Official|numero_libretro.so|Texas Instruments TI-83|true|8xp, 8xk, 8xg|Needs BIOS: `ti83se.rom` (md5: `c6ff8204c5c81b7be34614dbbd690c8b`) or `ti83plus.rom` (md5: `8011181f810b5ec4e9d6a03f0e14257a`) or `ti83.rom` (md5: `d4448d09bbfde687c04f9e3310e023ab`)|
 |Official|nxengine_libretro.so|Cave Story|true|exe|Needs game files|
 |Official|o2em_libretro.so|Magnavox Odyssey2, Phillips Videopac+|true|bin|Needs BIOS: `o2rom.bin` (md5: `562d5ebf9e030a40d6fabfc2f33139fd`)|
@@ -64,6 +66,7 @@ Below is the full list of cores that are included in the final generated OPK ins
 |Official|snes9x2005_libretro.so|SNES|true|smc, fig, sfc, gd3, gd7, dx2, bsx, swc| |
 |Official|snes9x2005_plus_libretro.so|SNES|true|smc, fig, sfc, gd3, gd7, dx2, bsx, swc| |
 |Official|stella2014_libretro.so|Atari 2600|true|a26, bin| |
+|Official|tamalibretro_libretro.so|Tamagotchi P1|true|b, bin, rom| |
 |Official|tic80_libretro.so|TIC-80|true|tic| |
 |Official|tyrquake_libretro.so|QUAKE|true|pak|Needs game files|
 |Official|uw8_libretro.so|MicroW8|true|uw8, wasm| |

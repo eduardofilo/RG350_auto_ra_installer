@@ -2,7 +2,9 @@ OPK Wrapper Title|OPK Wrapper file name|Icon|Browse|Core|Core name|ROM extension
 ZX81|ZX81|zx81|true|81_libretro.so||p,tzx,t81,zip,7z|/media/sdcard/roms/ZX81/
 2048|2048|2048|false|2048_libretro.so|||
 Atari 5200|A5200|a5200|true|a5200_libretro.so|a5200|bin,a52,zip,7z|/media/sdcard/roms/A5200/
-Arduboy|ARDUOUS|arduous|true|arduous_libretro.so||hex|/media/sdcard/roms/ARDUBOY/
+Anarch|ANARCH|anarch|false|anarch_libretro.so|||
+Arduboy|ARDENS|arduboy|true|ardens_libretro.so|Ardens|hex,arduboy|/media/sdcard/roms/ARDUBOY/
+Arduboy|ARDUOUS|arduboy|true|arduous_libretro.so|Arduous|hex|/media/sdcard/roms/ARDUBOY/
 BK-0011|BK0011|bk0011|true|bk_libretro.so||bin,zip,7z|/media/sdcard/roms/BK0011/
 Outrun|OUTRUN|outrun|true|cannonball_libretro.so||game,88,zip,7z|/media/sdcard/roms/OUTRUN/
 ChaiLove|CHAILOVE|chailove|true|chailove_libretro.so||chai,chailove|/media/sdcard/roms/CHAILOVE/
@@ -45,6 +47,7 @@ WonderSwan|WS|ws|true|mednafen_wswan_libretro.so|Mednafen Wswan|ws,wsc,pc2,zip,7
 Nintendo GBA|GBA_mGBA|gba|true|mgba_libretro.so|mGBA|gba,zip,7z|/media/sdcard/roms/GBA/
 Apple Macintosh|MAC|mac|True|minivmac_libretro.so|MinivmacII|dsk,img,zip,hvf,cmd|/media/sdcard/roms/MAC/
 Mr.Boom|MrBoom|mrboom|false|mrboom_libretro.so|||
+Palm|PALM|palm|true|mu_libretro.so|Mu|prc,pqa,img,pdb,zip|/media/sdcard/roms/PALM/
 Texas Instruments TI-83|TI83|ti83|true|numero_libretro.so|Numero|8xp,8xk,8xg,zip,7z|/media/sdcard/roms/TI83/
 Cave Story|CAVESTORY|cavestory|true|nxengine_libretro.so||exe,zip,7z|/media/sdcard/roms/CAVESTORY/
 Phillips Videopac|VIDEOPAC|videopac|true|o2em_libretro.so|O2em|bin,7z,zip|/media/sdcard/roms/VIDEOPAC/
@@ -66,6 +69,7 @@ Nintendo SNES|SFC_S9x2005|sfc|true|snes9x2005_libretro.so|Snes9x|smc,sfc,zip,7z|
 Nintendo SNES|SFC_S9x2005Plus|sfc|true|snes9x2005_plus_libretro.so|Snes9x+|smc,sfc,zip,7z|/media/sdcard/roms/SFC/
 Java ME|JAVAME|javame|true|squirreljme_libretro.so||jar,sqc,jam,jad,kjx|/media/sdcard/roms/JAVAME/
 Atari 2600|A2600|a2600|true|stella2014_libretro.so|Stella|bin,a26,7z,zip|/media/sdcard/roms/A2600/
+Tamagotchi P1|TAMAGOTCHI|tamagotchi|true|tamalibretro_libretro.so||b,bin,rom|/media/sdcard/roms/TAMAGOTCHI/
 TIC-80|TIC80|tic80|true|tic80_libretro.so||tic,7z,zip|/media/sdcard/roms/TIC80/
 Quake|QUAKE|quake|true|tyrquake_libretro.so|TyrQuake|pak,zip,7z|/media/sdcard/roms/QUAKE/
 MicroW8|UW8|microw8|true|uw8_libretro.so||uw8,wasm,zip,7z|/media/sdcard/roms/UW8/

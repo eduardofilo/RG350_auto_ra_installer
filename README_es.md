@@ -13,6 +13,8 @@ A continuación se muestra la lista completa de cores que se incluyen en el inst
 |Oficial|2048_libretro.so|[2048](https://en.wikipedia.org/wiki/2048_(video_game))|false| | |
 |Oficial|81_libretro.so|Sinclair ZX81|true|p, tzx, t81| |
 |Oficial|a5200_libretro.so|Atari 5200|true|bin, a52|Necesita BIOS: `5200.rom` (md5: `281f20ea4320404ec820fb7ec0693b38`)|
+|Oficial|anarch_libretro.so|Anarch|false| | |
+|Oficial|ardens_libretro.so|Arduboy|true|hex, arduboy| |
 |Oficial|arduous_libretro.so|Arduboy|true|hex| |
 |Oficial|bk_libretro.so|Elektronika - BK-0010/BK-0011|true|bin|Necesita BIOS (model `BK-0010`): `bk/BASIC10.ROM` (md5: `3fa774326d75410a065659aea80252f0`), `bk/FOCAL10.ROM` (md5: `5737f972e8638831ab71e9139abae052`), `bk/MONIT10.ROM` (md5: `95f8c41c6abf7640e35a6a03cecebd01`). Unsupported video mode en stock/ROGUE.|
 |Oficial|cannonball_libretro.so|SEGA Outrun|true|game, 88|Necesita ficheros de juego y un fichero dummy con la extensión `.game`|
@@ -46,7 +48,7 @@ A continuación se muestra la lista completa de cores que se incluyen en el inst
 |Oficial|mgba_libretro.so|GBA|true|gb, gbc, gba|BIOS opcional: `gba_bios.bin` (md5: `a860e8c0b6d573d191e4ec7db1b1e4f6`)|
 |Oficial|minivmac_libretro.so|MAC|true|dsk,img,zip,hvf,cmd|Necesita BIOS: `MacII.ROM` (md5: `66223be1497460f1e60885eeb35e03cc`)|
 |Oficial|mrboom_libretro.so|MrBoom|false| |Retirado en las últimas compilaciones. Se mantiene la parametrización por si vuelve.|
-|Oficial|mu_libretro.so|Palm|true|prc,pqa,img|Necesita BIOS: `palmos41-en-m515.rom` (md5: `83cb1d1c76e568b916dc2e7c0bf669f6`). Necesita un stick para manejar el stylus, por lo que no funciona sobre RG280V. Sólo stock/ROGUE|
+|Oficial|mu_libretro.so|Palm|true|prc, pqa, img, pdb, zip|Necesita BIOS: `palmos41-en-m515.rom` (md5: `83cb1d1c76e568b916dc2e7c0bf669f6`). Necesita un stick para manejar el stylus, por lo que no funciona sobre RG280V.|
 |Oficial|numero_libretro.so|Texas Instruments TI-83|true|8xp, 8xk, 8xg|Necesita BIOS: `ti83se.rom` (md5: `c6ff8204c5c81b7be34614dbbd690c8b`) o `ti83plus.rom` (md5: `8011181f810b5ec4e9d6a03f0e14257a`) o `ti83.rom` (md5: `d4448d09bbfde687c04f9e3310e023ab`)|
 |Oficial|nxengine_libretro.so|Cave Story|true|exe|Necesita ficheros de juego|
 |Oficial|o2em_libretro.so|Magnavox Odyssey2, Phillips Videopac+|true|bin|Necesita BIOS: `o2rom.bin` (md5: `562d5ebf9e030a40d6fabfc2f33139fd`)|
@@ -64,6 +66,7 @@ A continuación se muestra la lista completa de cores que se incluyen en el inst
 |Oficial|snes9x2005_libretro.so|SNES|true|smc, fig, sfc, gd3, gd7, dx2, bsx, swc| |
 |Oficial|snes9x2005_plus_libretro.so|SNES|true|smc, fig, sfc, gd3, gd7, dx2, bsx, swc| |
 |Oficial|stella2014_libretro.so|Atari 2600|true|a26, bin| |
+|Oficial|tamalibretro_libretro.so|Tamagotchi P1|true|b, bin, rom| |
 |Oficial|tic80_libretro.so|TIC-80|true|tic| |
 |Oficial|tyrquake_libretro.so|QUAKE|true|pak|Necesita ficheros de juego|
 |Oficial|uw8_libretro.so|MicroW8|true|uw8, wasm| |
